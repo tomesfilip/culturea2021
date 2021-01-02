@@ -1,5 +1,5 @@
 <template>  
-  <form class="flex-1 text-center justify-center">
+  <form class="flex-1 justify-center">
     <h2 class="uppercase text-4xl mb-2">Máte dotaz?</h2>
     <h2 class="uppercase text-4xl mb-6">Kontaktujte nás!</h2>
     <input 
@@ -54,8 +54,5 @@ export default {
   }
   input {
     background: none;
-  }
-  h2 {
-    font-family: GalanoGrotesqueBold;
   }
 </style>

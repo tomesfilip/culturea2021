@@ -1,4 +1,12 @@
-::-webkit-scrollbar {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* custom scrollbar */
+
+/* ::-webkit-scrollbar {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
@@ -9,4 +17,4 @@
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
-}
+} */
