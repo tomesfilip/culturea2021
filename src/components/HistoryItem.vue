@@ -30,7 +30,6 @@ export default {
   methods: {
     toggleOpenItem() {
       this.historyItem.open = !this.historyItem.open
-      console.log(this.historyItem.open)
     }
   }
 }
@@ -43,16 +42,14 @@ export default {
   }
 
   .history-item .info-text {
-    opacity: 0;
     position: relative;
     max-height: 0;
     font-style: italic;
     overflow: hidden;
-    transition: .6s ease;
+    transition: all .6s ease-in-out;
   }
 
   .history-item .info-text.opened {
-    opacity: 1;
     max-height: 1000px;
   }
 

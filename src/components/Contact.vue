@@ -1,4 +1,5 @@
 <template>
+<div class="lg:flex mx-auto lg:px-16 px-4 pb-6 pt-20 bg-red">
   <div class="flex-1 md:text-left text-center md:mb-0 mb-12">
     <div class="black-icon md:block flex justify-center mb-12">
       <img src="../assets/img/icon-black.png" alt="culturea čierne logo">
@@ -41,12 +42,17 @@
       </a>
     </div>
     <h4 class="font-bold">#letenkunepotrebuješ</h4>
-  </div>
+  </div>  
+  <Form />
+</div>
+  
 </template>
 
 <script>
-export default {
+import Form from './Form.vue'
 
+export default {
+  components: { Form }
 }
 </script>
 

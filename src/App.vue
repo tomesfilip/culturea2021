@@ -25,9 +25,8 @@
   <section id="organizer" class="py-12">
     <Organizer />
   </section>
-  <section id="contact" class="lg:flex mx-auto lg:px-16 px-4 pb-6 pt-20 bg-red">
+  <section id="contact">
     <Contact />   
-    <Form /> 
   </section>
   <Footer />
 </template>
@@ -75,5 +74,8 @@ export default {
 #app h2 {
   font-family: GalanoGrotesqueBold;
   text-align: center;
+}
+#our-team {
+  background: #E9C3BA;
 }
 </style>

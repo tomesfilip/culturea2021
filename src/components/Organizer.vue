@@ -4,15 +4,16 @@
     <img src="../assets/img/about/leave.png" alt="list">
     <img src="../assets/img/about/big-branch.png" alt="větev">
   </div>   -->
-  <div class="container mx-auto">
+  <Container>
     <h2 class="uppercase text-4xl">Pořadatel</h2>
     <img src="../assets/img/fmk-logo.png" alt="Fakulta multimediálních komunikací" class="lg:w-1/3 md:w-1/2 mx-auto">
-  </div>
+  </Container>
 </template>
 
 <script>
+import Container from './Container.vue'
 export default {
-
+  components: { Container }
 }
 </script>
 
