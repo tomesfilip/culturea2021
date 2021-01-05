@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+button:focus {
+  outline: none;
+}
+
 /* custom scrollbar */
 
 /* ::-webkit-scrollbar {
