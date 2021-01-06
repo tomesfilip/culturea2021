@@ -30,9 +30,9 @@ export default {
           isAnswer: false,
           answer: {
             titleOne: 'Írán:',
-            textOne: 'Kabab koobideh Ghormeh sabzi',
+            textOne: 'Kabab koobideh\nGhormeh sabzi',
             titleTwo: 'Polsko:',
-            textTwo: 'Czernina Bigos',
+            textTwo: 'Czernina\nBigos',
           }
         },
         {
@@ -42,9 +42,9 @@ export default {
           isAnswer: false,
           answer: {
             titleOne: 'Polsko:',
-            textOne: 'Marzanna Oczepiny',
+            textOne: 'Marzanna\nOczepiny',
             titleTwo: 'Írán:',
-            textTwo: 'Nowruz Sizdah be dar',
+            textTwo: 'Nowruz\nSizdah be dar',
           }
         },
         {
@@ -92,7 +92,7 @@ export default {
           cardText: 'Letenka?',
           isAnswer: false,
           answer: {
-            textOne: 'Letenku nepotrebuješ, príď to zažiť!'
+            textOne: 'Letenku nepotrebuješ,\n príď to zažiť!'
           }
         }
       ]
