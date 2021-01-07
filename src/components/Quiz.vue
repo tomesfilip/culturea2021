@@ -1,9 +1,13 @@
 <template>
   <Container class="md:px-8 px-10">
+    <div class="md:hidden block heading md:text-left text-center justify-center lg:p-4 p-0">
+      <p class="uppercase text-lososPink md:mb-0 mb-2">Zajímavé fakty</p>
+      <h3 class="uppercase text-oliveGreen text-4xl font-bold mb-8">Rychlý kvíz<br>o festivalu culturea</h3>
+    </div>
     <div class="quiz border-oliveGreen border-opacity-30 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-2 md:p-8 p-4">
-      <div class="quiz-card heading md:text-left text-center justify-center lg:p-4 p-0">
-        <p class="uppercase text-lososPink md:mb-0 mb-2">Zajímavé fakty</p>
-        <h3 class="uppercase text-oliveGreen text-4xl font-bold mb-8">Rychlý kvíz<br>o festivalu culturea</h3>
+      <div class="quiz-card md:flex flex-col hidden heading md:text-left text-center justify-center lg:p-4 p-0">
+        <p class="uppercase text-lososPink mb-4">Zajímavé fakty</p>
+        <h3 class="uppercase text-oliveGreen xl:text-4xl lg:text-3xl md:text-4xl font-bold mb-8 xl:leading-normal ">Rychlý kvíz<br>o festivalu culturea</h3>
       </div>
       <QuizCard
         v-for="(quizCard, index) in quizCards"
@@ -25,7 +29,6 @@ export default {
       quizCards: [
         {
           index: 1,
-          cardImage: '../assets/img/about/cards/card1.png',
           cardText: 'Jaké znáte místní delikatesy Polska a Íránu?',
           isAnswer: false,
           answer: {
@@ -37,7 +40,6 @@ export default {
         },
         {
           index: 2,
-          cardImage: '../assets/img/about/cards/card2.png',
           cardText: 'Jaké znáte zvyky a tradice?',
           isAnswer: false,
           answer: {
@@ -49,7 +51,6 @@ export default {
         },
         {
           index: 3,
-          cardImage: '../assets/img/about/cards/card3.png',
           cardText: 'Jaké zemí byli minuly rok?',
           isAnswer: false,
           answer: {
@@ -59,7 +60,6 @@ export default {
         },
         {
           index: 4,
-          cardImage: '../assets/img/about/cards/card4.png',
           cardText: 'Co jste víte o historii našeho festivalu?',
           isAnswer: false,
           answer: {
@@ -68,7 +68,6 @@ export default {
         },
         {
           index: 5,
-          cardImage: '../assets/img/about/cards/card5.png',
           cardText: 'Kolik let je našemu festivalu?',
           isAnswer: false,
           answer: {
@@ -78,7 +77,6 @@ export default {
         },
         {
           index: 6,
-          cardImage: '../assets/img/about/cards/card6.png',
           cardText: 'Místo konání festivalu?',
           isAnswer: false,
           answer: {
@@ -88,7 +86,6 @@ export default {
         },
         {
           index: 7,
-          cardImage: '../assets/img/about/cards/card7.png',
           cardText: 'Letenka?',
           isAnswer: false,
           answer: {

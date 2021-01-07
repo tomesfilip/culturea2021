@@ -1,13 +1,13 @@
 <template>
-  <div @click="quizCard.isAnswer = !quizCard.isAnswer" v-if="!quizCard.isAnswer" class="quiz-card bg-white justify-between items-center p-8">
-    <div class="quiz-card-img mb-8 flex h-4/5 items-center justify-center">
-      <img :src="getImgSrc"  alt="" class="w-full h-auto">
-    </div>
-    <div class="quiz-card-text text-center text-lososPink">
+  <div @click="quizCard.isAnswer = !quizCard.isAnswer" v-if="!quizCard.isAnswer" class="quiz-card bg-white xl:p-8 p-2">
+    <img :src="getImgSrc"  alt="" class="md:mb-12 mx-auto">
+    <div class="quiz-card-text text-center text-lososPink my-4">
       {{ quizCard.cardText }}
     </div>
   </div>
-  <div @click="quizCard.isAnswer = !quizCard.isAnswer" v-else class="quiz-card answer bg-red justify-center">
+  <div 
+    @click="quizCard.isAnswer = !quizCard.isAnswer" 
+    v-else class="quiz-card answer bg-red flex justify-center items-center">
     <div class="quiz-card-text answer text-center text-white md:px-16 px-8">
       <h4 v-if="quizCard.answer.titleOne" class="font-bold mb-1" :class="{ 'text-2xl': quizCard.answer.isBig }">
         {{ quizCard.answer.titleOne}}
@@ -30,33 +30,19 @@ import { computed } from 'vue'
 export default {
   name: 'QuizCard',
   props: ['quizCard'],
-  mounted() {
-    console.log(this.quizCard.cardImage)
-  },
   computed: {
     getImgSrc() {
-      return require(`../assets/img/about/cards/card${this.quizCard.index}.png`);
+      return require(`../assets/img/about/cards/card${this.quizCard.index}.jpg`);
     }
   }
 }
 </script>
 
 <style>
-  .quiz-card {
-    height: 24rem;
-    display: flex;
-    flex-direction: column;
-  }
-  @media only screen and (max-width: 1280px) {
-    .quiz-card {
-      height: 16rem;
-    }
-  }
-  @media only screen and (max-width: 1024px) {
-    .quiz-card {
-      height: 20rem;
-    }
-  }
+
+.quiz-card {
+  height: 24rem;
+}
 
   .quiz-card-text.answer {
     white-space: pre-wrap; 

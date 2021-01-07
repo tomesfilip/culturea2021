@@ -26,9 +26,9 @@
             <div class="member-photo w-full">
 
             </div>
-            <div class="member-name md:h-20 h-14 bg-red w-full flex items-center justify-center text-yellow">
+            <figcaption class="member-name md:h-20 h-14 bg-red w-full px-2 flex items-center justify-center text-yellow">
               {{ teamMember.name }}
-            </div>
+            </figcaption>
           </div>
         </template>
       </vueper-slide>

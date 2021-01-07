@@ -2,7 +2,9 @@
   <Nav>
     <NavItem href="https://www.facebook.com/Culturea/">FB</NavItem>
   </Nav>
-  <section id="slider"></section>
+  <section id="slider" class="pt-12 lg:pb-48 mb:pb-32 pb-12">
+    <Slider />
+  </section>
   <section id="about">
     <About />
   </section>
@@ -34,6 +36,7 @@
 <script>
 import Nav from './components/Nav.vue'
 import NavItem from './components/NavItem.vue'
+import Slider from './components/Slider.vue'
 import About from './components/About.vue'
 import VisitUsOnline from './components/VisitUsOnline.vue'
 import Program from './components/Program.vue'
@@ -49,6 +52,7 @@ export default {
   components: {
     Nav,
     NavItem,
+    Slider,
     About,
     VisitUsOnline,
     Program,
