@@ -6,7 +6,12 @@
   </div>   -->
   <Container>
     <h2 class="uppercase text-4xl">Pořadatel</h2>
-    <img src="../assets/img/fmk-logo.png" alt="Fakulta multimediálních komunikací" class="lg:w-1/3 md:w-1/2 mx-auto">
+    <div class="lg:w-1/3 md:w-1/2 mx-auto">
+      <a href="https://fmk.utb.cz" target="_blank" rel="external">
+        <img src="../assets/img/fmk-logo.png" alt="Fakulta multimediálních komunikací">
+      </a>
+    </div>
+    
   </Container>
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-  <Container class="lg:px-28 md:px-20 text-center">
+  <Container class="lg:px-28 md:px-4 text-center">
     <h2 class="uppercase text-4xl">Náš team</h2>
     <vueper-slides
       class="no-shadow md:pt-16 pt-12 px-4"
