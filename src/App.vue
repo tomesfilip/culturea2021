@@ -2,7 +2,7 @@
   <Nav>
     <NavItem href="https://www.facebook.com/Culturea/">FB</NavItem>
   </Nav>
-  <section id="slider" class="pt-12 lg:pb-48 mb:pb-32 pb-12">
+  <section id="slider" class="pt-12 mb:pb-32 pb-16">
     <Slider />
   </section>
   <section id="about">
