@@ -56,19 +56,19 @@ export default {
       isActive: false,     
       menuItems: [
         {
-          url: '#',
+          url: '#about',
           title: 'O festivalu'
         },
         {
-          url: '#',
+          url: '#program',
           title: 'Program'
         },
         {
-          url: '#',
+          url: '#history',
           title: 'Historie'
         },
         {
-          url: '#',
+          url: '#partners',
           title: 'Partneři'
         },
         {
@@ -76,7 +76,7 @@ export default {
           title: 'Pro media'
         },
         {
-          url: '#',
+          url: '#contact',
           title: 'Kontakt'
         }
       ],
