@@ -13,6 +13,8 @@
         v-for="(quizCard, index) in quizCards"
         :key="index"
         :quizCard="quizCard"
+        class="cursor-pointer"
+        @click="quizCard.isAnswer = !quizCard.isAnswer"
       />      
     </div>
   </Container>  

@@ -12,7 +12,7 @@
       class="mt-4 font-bold inline-flex items-center text-red text-lg focus:outline-none"
       @click="scroll"
     >
-      Minulé ročníky
+      Historie festivalu
       <span>
         <img src="../assets/img/arrow.png" alt="šipka" class="w-6 mt-1.5 ml-2">
       </span>

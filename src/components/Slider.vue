@@ -32,10 +32,10 @@ export default {
         },
         slides: [
         {
-          image: require('../assets/img/iran2.png')
+          image: require('../assets/img/iran.svg')
         },
         {
-          image: require('../assets/img/poland2.png')
+          image: require('../assets/img/poland.svg')
         }
       ]
     }

@@ -1,12 +1,11 @@
 <template>
-  <div @click="quizCard.isAnswer = !quizCard.isAnswer" v-if="!quizCard.isAnswer" class="quiz-card bg-white xl:p-8 p-2">
+  <div v-if="!quizCard.isAnswer" class="quiz-card flex flex-col bg-white xl:p-4 p-2">
     <img :src="getImgSrc"  alt="" class="md:mb-12 mx-auto">
-    <div class="quiz-card-text text-center text-lososPink my-4">
+    <div class="quiz-card-text text-center text-lososPink my-4 3xl:px-20 xl:px-12 lg:px-6 px-4">
       {{ quizCard.cardText }}
     </div>
   </div>
-  <div 
-    @click="quizCard.isAnswer = !quizCard.isAnswer" 
+  <div    
     v-else class="quiz-card answer bg-red flex justify-center items-center">
     <div class="quiz-card-text answer text-center text-white md:px-16 px-8">
       <h4 v-if="quizCard.answer.titleOne" class="font-bold mb-1" :class="{ 'text-2xl': quizCard.answer.isBig }">
@@ -32,7 +31,7 @@ export default {
   props: ['quizCard'],
   computed: {
     getImgSrc() {
-      return require(`../assets/img/about/cards/card${this.quizCard.index}.jpg`);
+      return require(`../assets/img/about/cards/card${this.quizCard.index}.png`);
     }
   }
 }
@@ -41,7 +40,7 @@ export default {
 <style>
 
 .quiz-card {
-  height: 24rem;
+  /* height: 24rem; */
 }
 
   .quiz-card-text.answer {
