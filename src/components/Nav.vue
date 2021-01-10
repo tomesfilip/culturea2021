@@ -4,9 +4,9 @@
     :class="{ active:isActive }">
     <div class="top-menu w-full lg:w-auto items-center flex justify-between">
       <div class="logo">
-        <a href="#">
+        <router-link :to="{ name: 'Home' }">
           <img src="../assets/img/logo-red.svg" alt="culturea červené logo">
-        </a>
+        </router-link>
       </div>
       <div 
         @click="isActive = !isActive" 
@@ -27,7 +27,13 @@
         :class="{ active: isActive }"
         id="menu">
       <li v-for="(menuItem, title) in menuItems" :key="title" class="flex items-center text-center">
-        <a class="2xl:text-lg font-bold align-middle lg:p-0 p-4" :href="menuItem.url">{{ menuItem.title }}</a>
+        <router-link 
+          v-if="menuItem.isRouterLink" 
+          :to="{ name: menuItem.url }"
+          class="2xl:text-lg font-bold align-middle lg:p-0 p-4">
+          {{ menuItem.title }}
+        </router-link>
+        <a v-else class="2xl:text-lg font-bold align-middle lg:p-0 p-4" :href="menuItem.url">{{ menuItem.title }}</a>
       </li>
       <SupportBtn class="xl:px-6 lg:px-2 3xl:text-lg" />
     </ul>
@@ -44,27 +50,28 @@ export default {
       isActive: false,
       menuItems: [
         {
-          url: '#about',
+          url: './#about',
           title: 'O festivalu'
         },
         {
-          url: '#program',
+          url: './#program',
           title: 'Program'
         },
         {
-          url: '#history',
+          url: './#history',
           title: 'Historie'
         },
         {
-          url: '#partners',
+          url: './#partners',
           title: 'Partneři'
         },
         {
-          url: '#',
-          title: 'Pro media'
+          url: 'ProMedia',
+          title: 'Pro media',
+          isRouterLink: true
         },
         {
-          url: '#contact',
+          url: './#contact',
           title: 'Kontakt'
         }
       ],

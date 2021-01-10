@@ -7,7 +7,7 @@
     <div class="quiz border-oliveGreen border-opacity-30 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-2 grid-rows-1 md:p-8 p-4">
       <div class="quiz-card md:flex flex-col hidden heading md:text-left text-center justify-center lg:p-4 p-0">
         <p class="uppercase text-lososPink mb-4">Zajímavé fakty</p>
-        <h3 class="uppercase text-oliveGreen xl:text-4xl lg:text-3xl md:text-4xl font-bold mb-8 xl:leading-normal ">Rychlý kvíz<br>o festivalu culturea</h3>
+        <h4 class="uppercase text-oliveGreen xl:text-4xl lg:text-3xl md:text-4xl font-bold mb-8 xl:leading-normal ">Rychlý kvíz<br>o festivalu culturea</h4>
       </div>
       <QuizCard
         v-for="(quizCard, index) in quizCards"
