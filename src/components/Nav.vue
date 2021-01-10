@@ -1,6 +1,6 @@
 <template>
   <nav id="nav" 
-    class="py-4 px-12 flex justify-between items-center flex-wrap lg:flex-nowrap bg-yellow"
+    class="py-4 px-12 flex justify-between items-center flex-wrap lg:flex-nowrap bg-yellow overflow-hidden"
     :class="{ active:isActive }">
     <div class="top-menu w-full lg:w-auto items-center flex justify-between">
       <div class="logo">
@@ -8,21 +8,10 @@
           <img src="../assets/img/logo-red.svg" alt="culturea červené logo">
         </a>
       </div>
-      <div @click="isActive = !isActive" class="lg:hidden hamburger cursor-pointer">
-        <svg 
-          v-if="isActive"
-          class="transition-all"
-          width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M16.4772 12.5L24.1763 4.80086C25.2746 3.70259 25.2746 1.92197 24.1763 0.823703C23.078 -0.274568 21.2975 -0.274568 20.1991 0.823703L12.5 8.52285L4.80086 0.823703C3.70259 -0.274568 1.92197 -0.274568 0.823703 0.823703C-0.274568 1.92197 -0.274568 3.70259 0.823703 4.80086L8.52284 12.5L0.823703 20.1991C-0.274568 21.2974 -0.274568 23.078 0.823703 24.1763C1.37284 24.7254 2.09254 25 2.81225 25C3.53196 25 4.25172 24.7254 4.8008 24.1763L12.5 16.4772L20.1991 24.1763C20.7483 24.7254 21.468 25 22.1877 25C22.9074 25 23.6271 24.7254 24.1762 24.1763C25.2745 23.078 25.2745 21.2974 24.1762 20.1991L16.4772 12.5Z" fill="#C42729"/>
-        </svg>
-        <svg
-          v-else
-          class="transition-all"
-          width="46" height="26" viewBox="0 0 46 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <line x1="2" y1="2" x2="44" y2="2" stroke="#C42729" stroke-width="4" stroke-linecap="round"/>
-          <line x1="2" y1="13" x2="44" y2="13" stroke="#C42729" stroke-width="4" stroke-linecap="round"/>
-          <line x1="2" y1="24" x2="44" y2="24" stroke="#C42729" stroke-width="4" stroke-linecap="round"/>
-        </svg>      
+      <div 
+        @click="isActive = !isActive" 
+        class="menu-toggle lg:hidden relative flex flex-col justify-center items-center cursor-pointer">
+          <div class="hamburger bg-red"></div>
       </div>    
     </div>
     
@@ -37,8 +26,8 @@
         items-center"
         :class="{ active: isActive }"
         id="menu">
-      <li v-for="(menuItem, title) in menuItems" :key="title">
-        <a class="2xl:text-lg font-bold align-middle" :href="menuItem.url">{{ menuItem.title }}</a>
+      <li v-for="(menuItem, title) in menuItems" :key="title" class="flex items-center text-center">
+        <a class="2xl:text-lg font-bold align-middle lg:p-0 p-4" :href="menuItem.url">{{ menuItem.title }}</a>
       </li>
       <SupportBtn class="xl:px-6 lg:px-2 3xl:text-lg" />
     </ul>
@@ -52,8 +41,7 @@ export default {
   components: { SupportBtn },
   data() {
     return {
-      toggled: false, 
-      isActive: false,     
+      isActive: false,
       menuItems: [
         {
           url: '#about',
@@ -82,25 +70,74 @@ export default {
       ],
     }
   },
-  methods: {
+  methods: {    
   }
 }
 </script>
 
 <style>
 
+@media only screen and (max-width: 1024px) {
+  .menu-toggle {
+    width: 46px;
+    height: 34px;  
+    transition: all .4s ease-in-out;
+  }
+
+  .hamburger {
+    width: 100%;
+    height: 4px;
+    border-radius: 1rem;
+    transition: all .4s ease-in-out;
+  }
+
+  .hamburger::before,.hamburger::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: #C42729;
+    border-radius: 1rem;
+    transition: all .4s ease-in-out;
+  }
+
+  .hamburger::before {
+    transform: translateY(-11px);
+  }
+
+  .hamburger::after {
+    transform: translateY(11px);
+  }
+
+  #nav.active .hamburger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+  }
+  #nav.active .hamburger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+  #nav.active .hamburger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
+  
+
   #nav.active {
     height: 100vh;
     justify-content: center;
     align-items: flex-start;
   }
+
   #menu.active {
     width: 100%;
     top: 16vh;
     height: 80vh;
     justify-content: space-around;
-    transform: translateY(0);   
+    transform: translateY(0);
   }
+}
+
+  
 
   #menu.active li {
     font-size: 1.2rem;

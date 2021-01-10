@@ -45,42 +45,34 @@ export default {
         {
           year: "2013",
           title: "Itálie a Japonsko",
-          open: false
         },
         {
           year: "2014",
           title: "Indie a Velká Británie",
-          open: false
         },
         {
           year: "2015",
           title: "Francie a Brazílie",
-          open: false
         },
         {
           year: "2016",
           title: "Španělsko a Vietnam",
-          open: false
         },
         {
           year: "2017",
           title: "Řecko a Egypt",
-          open: false
         },
         {
           year: "2018",
           title: "Norsko a Nepál",
-          open: false
         },
         {
           year: "2019",
           title: "Island a Mexiko",
-          open: false
         },
         {
           year: "2020",
           title: "Ukrajina a SRÍ LANKA",
-          open: false
         },
       ]
     }

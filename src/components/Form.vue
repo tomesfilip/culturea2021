@@ -18,9 +18,9 @@
       cols="20"
       rows="10" 
       placeholder="Vaše zpráva" 
-      class="w-full my-4 p-4 max-h-48 placeholder-black focus:outline-none">
+      class="w-full my-4 p-4 max-h-48 placeholder-black focus:outline-none resize-none bg-lososPink">
     </textarea>
-    <button class="font-bold w-full py-4 text-xl">Poslat</button>
+    <button class="font-bold w-full py-4 text-xl bg-yellow">Poslat</button>
   </form>
 </template>
 
@@ -31,26 +31,8 @@ export default {
 </script>
 
 <style>
-  form button {
-    background: #EAF1D0;
-    font-family: GalanoGrotesqueBold;
-  }
   textarea {
-    background: #DD8C83;
-    resize: none;
     height: 12rem;
-  }
-  textarea ::-webkit-scrollbar {
-    width: 10px;
-  }
-  textarea ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  }
-  textarea ::-webkit-scrollbar-thumb {
-    background: #888;
-  }
-  textarea ::-webkit-scrollbar-thumb:hover {
-    background: #555;
   }
   input {
     background: none;

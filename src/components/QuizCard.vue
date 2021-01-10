@@ -1,5 +1,5 @@
 <template>
-  <div v-if="!quizCard.isAnswer" class="quiz-card flex flex-col bg-white xl:p-4 p-2">
+  <div v-if="!quizCard.isAnswer" class="quiz-card flex flex-col justify-around bg-white xl:p-4 p-2">
     <img :src="getImgSrc"  alt="" class="md:mb-12 mx-auto">
     <div class="quiz-card-text text-center text-lososPink my-4 3xl:px-20 xl:px-12 lg:px-6 px-4">
       {{ quizCard.cardText }}
@@ -38,12 +38,17 @@ export default {
 </script>
 
 <style>
-
-.quiz-card {
-  /* height: 24rem; */
+@media only screen and (min-width: 768px) {
+  .quiz-card {
+    height: 23rem;
+  }
 }
 
-  .quiz-card-text.answer {
-    white-space: pre-wrap; 
-  }
+.quiz-card {
+  height: 25rem;
+}
+
+.quiz-card-text.answer {
+  white-space: pre-wrap; 
+}
 </style>

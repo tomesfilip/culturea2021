@@ -2,10 +2,10 @@
   <Nav>
     <NavItem href="https://www.facebook.com/Culturea/">FB</NavItem>
   </Nav>
-  <section id="slider" class="pt-12 mb:pb-32 pb-16">
+  <section id="slider" class="pt-12 mb:pb-32 pb-0">
     <Slider />
   </section>
-  <section id="about">
+  <section id="about" class="py-12">
     <About />
   </section>
   <section id="visit-us-online" class="py-12">
@@ -14,7 +14,9 @@
   <section id="program" class="py-12">
     <Program />
   </section>
-  <section id="map"></section>
+  <section id="map" class="py-12">
+    <Map />
+  </section>
   <section id="our-team" class="py-12">
     <Team />
   </section>
@@ -40,6 +42,7 @@ import Slider from './components/Slider.vue'
 import About from './components/About.vue'
 import VisitUsOnline from './components/VisitUsOnline.vue'
 import Program from './components/Program.vue'
+import Map from './components/Map.vue'
 import Team from './components/Team.vue'
 import Partners from './components/Partners.vue'
 import History from './components/History.vue'
@@ -56,6 +59,7 @@ export default {
     About,
     VisitUsOnline,
     Program,
+    Map,
     Team,
     Partners,
     History,
