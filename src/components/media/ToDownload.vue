@@ -1,8 +1,8 @@
 <template>
-  <Container class="lg:w-1/2 text-center px-4">
+  <Container class="xl:w-1/2 lg:w-2/3 text-center px-4">
     <h3 class="uppercase text-3xl mb-16 ml-4">KE STAŽENÍ</h3>
-    <div class="download-items flex flex-wrap justify-center text-red font-bold">
-      <DownloadItem v-for="downloadItem in downloadItems" :key="downloadItem" :downloadItem="downloadItem" />
+    <div class="download-items flex flex-wrap justify-center flex-col sm:flex-row text-red font-bold">
+      <DownloadItem v-for="downloadItem in downloadItems" :key="downloadItem" :downloadItem="downloadItem" :imgSrc="downloadItem.img" />
     </div>
   </Container>
 </template>
@@ -16,15 +16,18 @@ export default {
     return {
       downloadItems: [
         {
-          img: '../../assets/img/media/file.svg',
+          img: 'media/file.svg',
+          alt: 'soubor',
           text: 'Tiskové zprávy'
         },
         {
-          img: '../../assets/img/media/picture.svg',
+          img: 'media/picture.svg',
+          alt: 'obrázek',
           text: 'Fotografie ke stažení'
         },
         {
-          img: '../../assets/img/media/visual.svg',
+          img: 'media/visual.svg',
+          alt: 'deska na malování',
           text: 'Vizuál 2021'
         }
       ]

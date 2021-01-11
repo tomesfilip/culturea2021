@@ -1,6 +1,6 @@
 <template>
   <div v-if="!quizCard.isAnswer" class="quiz-card flex flex-col justify-around bg-white xl:p-4 p-2">
-    <img :src="getImgSrc"  alt="" class="md:mb-12 mx-auto">
+    <img :src="require('@/assets/img/' + quizCard.img)"  :alt="quizCard.alt" class="md:mb-12 mx-auto">
     <div class="quiz-card-text text-center text-lososPink my-4 3xl:px-20 xl:px-12 lg:px-6 px-4">
       {{ quizCard.cardText }}
     </div>
@@ -25,15 +25,9 @@
 </template>
 
 <script>
-import { computed } from 'vue'
 export default {
   name: 'QuizCard',
   props: ['quizCard'],
-  computed: {
-    getImgSrc() {
-      return require(`../assets/img/about/cards/card${this.quizCard.index}.png`);
-    }
-  }
 }
 </script>
 

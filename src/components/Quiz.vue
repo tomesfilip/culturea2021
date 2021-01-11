@@ -32,6 +32,7 @@ export default {
         {
           index: 1,
           cardText: 'Jaké znáte místní delikatesy Polska a Íránu?',
+          img: 'about/cards/card1.png',
           isAnswer: false,
           answer: {
             titleOne: 'Írán:',
@@ -43,6 +44,7 @@ export default {
         {
           index: 2,
           cardText: 'Jaké znáte zvyky a tradice?',
+          img: 'about/cards/card2.png',
           isAnswer: false,
           answer: {
             titleOne: 'Polsko:',
@@ -54,6 +56,7 @@ export default {
         {
           index: 3,
           cardText: 'Jaké zemí byli minuly rok?',
+          img: 'about/cards/card3.png',
           isAnswer: false,
           answer: {
             textOne: 'Srí Lanka',
@@ -63,6 +66,7 @@ export default {
         {
           index: 4,
           cardText: 'Co jste víte o historii našeho festivalu?',
+          img: 'about/cards/card4.png',
           isAnswer: false,
           answer: {
             textOne: 'V roce 2013 to vše začalo. Pilotní ročník festivalu vzal návštévníky do vášnivé Itálie, kterou propojil se zemí vycházejíciho slunce - Japonskem.'
@@ -71,6 +75,7 @@ export default {
         {
           index: 5,
           cardText: 'Kolik let je našemu festivalu?',
+          img: 'about/cards/card5.png',
           isAnswer: false,
           answer: {
             isBig: true,
@@ -80,6 +85,7 @@ export default {
         {
           index: 6,
           cardText: 'Místo konání festivalu?',
+          img: 'about/cards/card6.png',
           isAnswer: false,
           answer: {
             titleOne: 'Zlín',
@@ -89,6 +95,7 @@ export default {
         {
           index: 7,
           cardText: 'Letenka?',
+          img: 'about/cards/card7.png',
           isAnswer: false,
           answer: {
             textOne: 'Letenku nepotrebuješ,\n príď to zažiť!'

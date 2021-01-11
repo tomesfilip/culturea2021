@@ -1,7 +1,7 @@
 <template>
-  <div class="download-item flex items-center px-8 mb-8">
-    <img src="../../assets/img/media/file.svg" class="pr-4" alt="">
-    <p>{{ downloadItem.text }}</p>
+  <div class="download-item flex items-center flex-col sm:flex-row px-8 mb-8">
+    <img :src="require('@/assets/img/' + downloadItem.img)" class="sm:pr-4" :alt="downloadItem.alt">
+    <p class="mt-4 px-8 sm:px-0 sm:mt-0">{{ downloadItem.text }}</p>
   </div>
 </template>
 
@@ -9,8 +9,6 @@
 export default {
   name: 'DownloadItem',
   props: ['downloadItem'],
-  computed: {
-  }
 }
 </script>
 

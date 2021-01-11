@@ -1,6 +1,8 @@
 <template>
-  <Container>
+  <Container class="font-bold text-center">
     <h3 class="uppercase text-3xl mb-4 ml-4">KONTAKT PRO NOVINÁŘE</h3>
+    <p class="text-red">Jméno Příjmení</p>
+    <p class="text-red">email:</p>
   </Container>
 </template>
 
