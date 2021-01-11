@@ -1,8 +1,8 @@
 <template>
   <nav id="nav" 
-    class="py-4 px-12 flex justify-between items-center flex-wrap lg:flex-nowrap bg-yellow overflow-hidden"
+    class="py-4 lg:px-12 flex justify-between items-center flex-wrap lg:flex-nowrap bg-yellow overflow-hidden"
     :class="{ active:isActive }">
-    <div class="top-menu w-full lg:w-auto items-center flex justify-between">
+    <div class="top-menu px-12 lg:px-0 w-full lg:w-auto items-center flex justify-between z-10">
       <div class="logo">
         <router-link :to="{ name: 'Home' }">
           <img src="../assets/img/logo-red.svg" alt="culturea červené logo">
@@ -83,7 +83,6 @@ export default {
 </script>
 
 <style>
-
 @media only screen and (max-width: 1024px) {
   .menu-toggle {
     width: 46px;
@@ -121,13 +120,14 @@ export default {
   background: transparent;
   box-shadow: none;
   }
+
   #nav.active .hamburger::before {
     transform: rotate(45deg) translate(35px, -35px);
   }
+
   #nav.active .hamburger::after {
     transform: rotate(-45deg) translate(35px, 35px);
   }
-  
 
   #nav.active {
     height: 100vh;
@@ -135,16 +135,22 @@ export default {
     align-items: flex-start;
   }
 
-  #menu.active {
+  #menu {
     width: 100%;
     top: 16vh;
     height: 80vh;
+    visibility: hidden;
     justify-content: space-around;
+    z-index: -3;
+    transition: all .6s;
+  }
+
+  #menu.active {
+    visibility: visible;
+    z-index: 2;
     transform: translateY(0);
   }
 }
-
-  
 
   #menu.active li {
     font-size: 1.2rem;
