@@ -51,27 +51,63 @@ export default {
       teamMembers: [
         {
           photo: '',
-          name: 'Lucia Novotná'
-        },
-        {
-          photo: '',
           name: 'Michaela Eliášová'
         },
         {
           photo: '',
-          name: 'Polina Rodionova'
+          name: 'Lucia Novotná'
         },
         {
           photo: '',
-          name: 'Tereza Brlicová'
+          name: 'Lukáš Bouška'
+        },         
+        {
+          photo: '',
+          name: 'Aneta Tomanová'
         },
         {
           photo: '',
-          name: 'Filip Tomeš'
+          name: 'Lucie Monsportová'
         },
         {
           photo: '',
-          name: 'Rastislav Škojec'
+          name: 'Anna Vrbková'
+        },
+        {
+          photo: '',
+          name: 'Bára Fotrová'
+        },
+        {
+          photo: '',
+          name: 'Bára Navrátilová'
+        },
+        {
+          photo: '',
+          name: 'Kristína Mlynárová'
+        },
+        {
+          photo: '',
+          name: 'Martin Tomiga'
+        },
+        {
+          photo: '',
+          name: 'Radka Vybíralová'
+        },
+        {
+          photo: '',
+          name: 'Anežka Karvanová'
+        },
+        {
+          photo: '',
+          name: 'Anna Marenčáková'
+        },
+        {
+          photo: '',
+          name: 'Barbora Březíková'
+        },
+        {
+          photo: '',
+          name: 'Vojtěch Vaník'
         },
         {
           photo: '',
@@ -79,11 +115,55 @@ export default {
         },
         {
           photo: '',
-          name: 'Lukáš Bouška'
+          name: 'Rastislav Škojec'
+        },
+        {
+          photo: '',
+          name: 'Veronika Ištvánková'
+        },
+        {
+          photo: '',
+          name: 'Jan Vilímek'
+        },
+        {
+          photo: '',
+          name: 'Tereza Brlicová'
+        },
+        {
+          photo: '',
+          name: 'Lucia Mišeková'
+        },
+        {
+          photo: '',
+          name: 'Zuzana Pevná'
+        },
+        {
+          photo: '',
+          name: 'Kateřina Turková'
+        },
+        {
+          photo: '',
+          name: 'Romana Červenková'
         },
         {
           photo: '',
           name: 'Daniela Kačeriaková'
+        },        
+        {
+          photo: '',
+          name: 'Polina Rodionova'
+        },
+        {
+          photo: '',
+          name: 'Anna Holasová'
+        },
+        {
+          photo: '',
+          name: 'Valéria Balážová'
+        },
+        {
+          photo: '',
+          name: 'Filip Tomeš'
         },
         {
           photo: '',
@@ -95,7 +175,15 @@ export default {
         },
         {
           photo: '',
-          name: 'Anna Marenčáková'
+          name: 'Vincent Stránský'
+        },
+        {
+          photo: '',
+          name: 'Michal Kuthan'
+        },
+        {
+          photo: '',
+          name: 'Matěj Voch'
         }
       ]
     }
