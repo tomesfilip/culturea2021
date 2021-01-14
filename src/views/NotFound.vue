@@ -1,5 +1,5 @@
 <template>
-  <div class="not-found">
+  <div class="not-found text-center">
     <h2>404</h2>
     <p>Požadovaná stránka není k dipozici</p>
     <router-link to="/">Zpět na hlavní stránku</router-link>

@@ -13,6 +13,8 @@ import { Splide, SplideSlide } from '@splidejs/vue-splide'
 import '@splidejs/splide/dist/css/themes/splide-default.min.css'
 import '@splidejs/splide/dist/css/themes/splide-sea-green.min.css'
 import '@splidejs/splide/dist/css/themes/splide-skyblue.min.css'
+import polandImg from '../assets/img/poland.svg'
+import iranImg from '../assets/img/iran.svg'
 
 export default {
   components: {
@@ -32,10 +34,10 @@ export default {
         },
         slides: [
         {
-          image: require('../assets/img/iran.svg')
+          image: iranImg
         },
         {
-          image: require('../assets/img/poland.svg')
+          image: polandImg
         }
       ]
     }
