@@ -102,7 +102,7 @@ export default {
     position: absolute;
     width: 100%;
     height: 4px;
-    background: #C42729;
+    background: #1BB36C;
     border-radius: 1rem;
     transition: all .4s ease-in-out;
   }
