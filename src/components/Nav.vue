@@ -1,17 +1,17 @@
 <template>
   <nav id="nav" 
-    class="py-4 lg:px-12 flex justify-between items-center flex-wrap lg:flex-nowrap bg-yellow overflow-hidden"
+    class="py-4 lg:px-12 flex justify-between items-center flex-wrap lg:flex-nowrap overflow-hidden"
     :class="{ active:isActive }">
     <div class="top-menu px-12 lg:px-0 w-full lg:w-auto items-center flex justify-between z-10">
       <div class="logo">
         <router-link :to="{ name: 'Home' }">
-          <img src="../assets/img/logo-red.svg" alt="culturea červené logo">
+          <img src="../assets/img/logo-green.svg" alt="culturea červené logo">
         </router-link>
       </div>
       <div 
         @click="isActive = !isActive" 
         class="menu-toggle lg:hidden relative flex flex-col justify-center items-center cursor-pointer">
-          <div class="hamburger bg-red"></div>
+          <div class="hamburger bg-green"></div>
       </div>    
     </div>
     
@@ -22,7 +22,7 @@
         lg:relative absolute
         transform
         lg:-translate-y-0 -translate-y-full
-        lg:space-x-8 semi-lg:space-x-12 xl:space-x-16 1.5xl:space-x-20 2xl:space-x-24 3xl:space-x-32 
+        lg:space-x-8 semi-lg:space-x-10 xl:space-x-12 1.5xl:space-x-16 2xl:space-x-20 3xl:space-x-32 
         items-center"
         :class="{ active: isActive }"
         id="menu">

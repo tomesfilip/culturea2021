@@ -26,7 +26,12 @@ module.exports = {
         red: '#C42729',
         yellow: '#EAF1D0',
         oliveGreen: '#66B06E',
-        lososPink: '#DD8C83'
+        lososPink: '#DD8C83',
+        grey: '#E0DEDE',
+        lightGrey: '#B5B5B5',
+        greyOp50: '#DFB5B0',
+        green: '#1BB36C',
+        darkGrey: '#4B4B4B'
       }
     },
   },

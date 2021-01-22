@@ -52,23 +52,18 @@ export default {
   font-family: GalanoGrotesqueMedium;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url('./assets/img/bg-pattern.png') repeat-y #EAF1D0;
 }
 #app h2, h3 {
   font-family: GalanoGrotesqueBold;
   text-align: center;
 }
-#our-team {
-  background: #E9C3BA;
-}
 
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
   #organizer {
     background: no-repeat left url('./assets/img/organizer/leave-branch.svg'), no-repeat right url('./assets/img/organizer/branch.svg');
     background-size: 6.5rem;
   }
-  
-}
+} */
 @media only screen and (min-width: 1024px) {
   #organizer {
     background-size: 8rem;

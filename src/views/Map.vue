@@ -1,10 +1,12 @@
 <template>
-  <h2>MAP</h2>
+  <HereMap />
 </template>
 
 <script>
-export default {
+import HereMap from '../components/HereMap.vue'
 
+export default {
+  components: { HereMap }
 }
 </script>
 

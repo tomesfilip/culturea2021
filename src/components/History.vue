@@ -13,7 +13,7 @@
       />
     </div>
     <button 
-      class="text-center w-24 mt-8 font-bold inline-flex items-center justify-center text-red text-lg focus:outline-none"
+      class="text-center w-24 mt-8 font-bold inline-flex items-center justify-center text-green text-lg focus:outline-none"
       @click="toggleShowedAll"  
     >
       <div class="text w-16">

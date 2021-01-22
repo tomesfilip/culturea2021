@@ -1,5 +1,5 @@
 <template>
-  <footer class="mx-auto text-center px-8 py-8">
+  <footer class="mx-auto text-center px-8 py-8 bg-lososPink">
     <p>
       Tento web není oficiální stránkou Univerzity Tomáše Bati ve Zlíně. Jedná se o web k projektu Culturea, který je spravován studenty v rámci předmětu<br>Komunikační agentura Fakulty multimediálních komunikací Univerzity Tomáše Bati ve Zlíně.
       <br>
@@ -18,7 +18,4 @@ export default {
 </script>
 
 <style>
-  footer {
-    background: #C42729;
-  }
 </style>

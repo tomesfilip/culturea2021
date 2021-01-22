@@ -1,13 +1,15 @@
 <template>
   <h2 class="text-4xl uppercase">Mapa festivalu</h2>
-  <GoogleMap
+  <!-- <GoogleMap
   class="g-map"
   :api-key="mapKey"
   :center="center"
-  :zoom="15"
+  :zoom="16"
+  :fullscreenControl="false"
+  controlPosition="LEFT_TOP"
   >
     <Marker :options="{ position: center }" />
-  </GoogleMap>
+  </GoogleMap> -->
 
 </template>
 
@@ -21,15 +23,20 @@ export default defineComponent ({
   setup() {
     const center = { lat: 49.22645, lng: 17.67065 }
     const mapKey = process.env.VUE_APP_GOOGLEMAPS_KEY
+
     return { center, mapKey }
-  },
+  }
 })
 </script>
 
 <style>
-.g-map {
+  .g-map{
     margin: 5rem 0;
     height: 100vh;
     width: 100%;
+  }
+
+  .gm-control-active{
+    background: black;
   }
 </style>

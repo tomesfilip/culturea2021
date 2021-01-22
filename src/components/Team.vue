@@ -19,14 +19,14 @@
       <vueper-slide 
         v-for="(teamMember, name) in teamMembers" 
         :key="name" 
-        class="member flex bg-yellow"
+        class="member flex bg-darkGrey"
       >
         <template v-slot:content>
-          <div class="vueperslide__content-wrapper justify-end bg-yellow">
+          <div class="vueperslide__content-wrapper justify-end bg-darkGrey">
             <div class="member-photo w-full">
 
             </div>
-            <figcaption class="member-name md:h-20 h-14 bg-red w-full px-2 flex items-center justify-center text-yellow">
+            <figcaption class="member-name md:h-20 h-14 bg-green w-full px-2 flex items-center justify-center text-yellow">
               {{ teamMember.name }}
             </figcaption>
           </div>
@@ -193,7 +193,7 @@ export default {
 
 <style>
   .vueperslides__bullet .default {
-  background-color: #EAF1D0;
+  background-color: #4B4B4B;
   border: none;
   box-shadow: none;
   transition: 0.3s;
@@ -202,7 +202,7 @@ export default {
 }
 
 .vueperslides__bullet--active .default {
-  background-color: #C42729;
+  background-color: #1BB36C;
   }
 
 .vueperslides__bullet span {
@@ -217,14 +217,14 @@ export default {
 }
 
 .vueperslides__arrow {
-  color: #C42729;
+  color: #1BB36C;
 }
 
 .slider-arrow {
   display: block;
   width: 32px;
   height: 60px;
-  background: url('../assets/img/sliderArrow.png') no-repeat content-box;
+  background: url('../assets/img/sliderArrow.svg') no-repeat content-box;
 }
 
 

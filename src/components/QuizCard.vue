@@ -1,13 +1,13 @@
 <template>
-  <div v-if="!quizCard.isAnswer" class="quiz-card flex flex-col justify-around bg-white xl:p-4 p-2">
+  <div v-if="!quizCard.isAnswer" class="quiz-card flex flex-col justify-around bg-black xl:p-4 p-2">
     <img :src="quizCard.img"  :alt="quizCard.alt" class="md:mb-12 mx-auto">
-    <div class="quiz-card-text text-center text-lososPink my-4 3xl:px-20 xl:px-12 lg:px-6 px-4">
+    <div class="quiz-card-text text-center text-white my-4 3xl:px-20 xl:px-12 lg:px-6 px-4">
       {{ quizCard.cardText }}
     </div>
   </div>
   <div    
-    v-else class="quiz-card answer bg-red flex justify-center items-center">
-    <div class="quiz-card-text answer text-center text-white md:px-16 px-8">
+    v-else class="quiz-card answer bg-green flex justify-center items-center">
+    <div class="quiz-card-text answer text-center text-black md:px-16 px-8">
       <h4 v-if="quizCard.answer.titleOne" class="font-bold mb-1" :class="{ 'text-2xl': quizCard.answer.isBig }">
         {{ quizCard.answer.titleOne}}
       </h4>
