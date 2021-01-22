@@ -6,13 +6,13 @@
     <section id="about" class="py-12">
       <About />
     </section>
-    <section id="visit-us-online" class="py-12">
+    <section id="visit-us-online" class="pt-12 pb-40">
       <VisitUsOnline />
     </section>
-    <section id="program" class="py-12">
+    <section id="program" class="pt-12 mt-8 pb-24">
       <Program />
     </section>
-    <section id="map" class="py-12">
+    <section id="map" class="py-12 mt-28">
       <MapInfo />
     </section>
     <section id="our-team" class="py-12 bg-grey">
@@ -63,5 +63,19 @@ export default {
   #visit-us-online {
     background-size: 10rem;
   }
-} 
+}
+
+@media only screen and (min-width: 1024px) {
+  
+}
+
+#visit-us-online {
+  background: url('../assets/img/apple-pattern.svg') no-repeat bottom;
+  background-size: contain;
+}
+
+#program {
+  background: url('../assets/img/dashed-line.svg') no-repeat bottom;
+  background-size: contain;
+}
 </style>
