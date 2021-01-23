@@ -21,6 +21,9 @@ module.exports = {
 
       '3xl': '1792px',
     },
+    fontFamily: {
+      'heading': ['GalanoGrotesqueBold'],
+    },
     extend: {      
       colors: {
         red: '#C42729',
@@ -28,7 +31,7 @@ module.exports = {
         oliveGreen: '#66B06E',
         lososPink: '#DD8C83',
         grey: '#E0DEDE',
-        lightGrey: '#B5B5B5',
+        lightGrey: '#E9E9E9',
         greyOp50: '#DFB5B0',
         green: '#1BB36C',
         darkGrey: '#4B4B4B'

@@ -1,35 +1,35 @@
 <template>
-<div class="bg-lightGrey p-12">
-  <Container class="md:px-8 px-10">
-    <div class="quiz grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-2 grid-rows-1 md:p-8 p-4">
-      <div class="quiz-card bg-white md:flex flex-col hidden heading md:text-left text-center justify-center lg:p-4 p-0">
-        <p class="uppercase text-lososPink mb-4">Zajímavé fakty</p>
-        <h4 class="uppercase xl:text-4xl lg:text-3xl md:text-4xl font-bold mb-8 xl:leading-normal ">Rychlý kvíz<br>o festivalu culturea</h4>
+  <Container class="px-6 lg:px-0">
+    <div class="bg-lightGrey p-8">
+      <div class="quiz grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-2 grid-rows-1">
+        <div class="quiz-card bg-white flex flex-col justify-between p-4 h-80 md:h-96">
+          <p class="uppercase text-lososPink mb-4 text-xl font-bold">Zajímavé fakty</p>
+          <h4 class="uppercase xl:text-4xl lg:text-3xl md:text-4xl text-2xl font-heading mb-8 xl:leading-normal ">Rychlý kvíz<br>o festivalu culturea</h4>
+        </div>
+        <QuizCard
+          v-for="(quizCard, index) in quizCards"
+          :key="index"
+          :quizCard="quizCard"
+          class="cursor-pointer"
+          @click="quizCard.isAnswer = !quizCard.isAnswer"
+        />      
       </div>
-      <QuizCard
-        v-for="(quizCard, index) in quizCards"
-        :key="index"
-        :quizCard="quizCard"
-        class="cursor-pointer"
-        @click="quizCard.isAnswer = !quizCard.isAnswer"
-      />      
     </div>
+    
   </Container>  
-</div>
-  
 </template>
 
 <script>
 import Container from './Container.vue'
 import QuizCard from './QuizCard.vue'
 
-import card1Img from '../assets/img/about/cards/card1.png'
-import card2Img from '../assets/img/about/cards/card2.png'
-import card3Img from '../assets/img/about/cards/card3.png'
-import card4Img from '../assets/img/about/cards/card4.png'
-import card5Img from '../assets/img/about/cards/card5.png'
-import card6Img from '../assets/img/about/cards/card6.png'
-import card7Img from '../assets/img/about/cards/card7.png'
+import card1Img from '../assets/img/about/cards/card1.svg'
+import card2Img from '../assets/img/about/cards/card2.svg'
+import card3Img from '../assets/img/about/cards/card3.svg'
+import card4Img from '../assets/img/about/cards/card4.svg'
+import card5Img from '../assets/img/about/cards/card5.svg'
+import card6Img from '../assets/img/about/cards/card6.svg'
+import card7Img from '../assets/img/about/cards/card7.svg'
 
 export default {
   components: { Container, QuizCard },
@@ -62,7 +62,7 @@ export default {
         },
         {
           index: 3,
-          cardText: 'Jaké zemí byli minuly rok?',
+          cardText: 'Jaké zemi byli minuly rok?',
           img: card3Img,
           isAnswer: false,
           answer: {
@@ -72,7 +72,7 @@ export default {
         },
         {
           index: 4,
-          cardText: 'Co jste víte o historii našeho festivalu?',
+          cardText: 'Co víte o historii našeho festivalu?',
           img: card4Img,
           isAnswer: false,
           answer: {

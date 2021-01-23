@@ -53,10 +53,6 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-#app h2, h3 {
-  font-family: GalanoGrotesqueBold;
-  text-align: center;
-}
 
 /* @media only screen and (min-width: 768px) {
   #organizer {

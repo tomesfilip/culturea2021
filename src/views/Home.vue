@@ -12,7 +12,7 @@
     <section id="program" class="pt-12 mt-8 pb-24">
       <Program />
     </section>
-    <section id="map" class="py-12 mt-28">
+    <section id="map" class=" pb-24 mt-28">
       <MapInfo />
     </section>
     <section id="our-team" class="py-12 bg-grey">

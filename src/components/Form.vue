@@ -1,7 +1,7 @@
 <template>  
   <form class="flex-1 justify-center">
-    <h2 class="uppercase text-4xl mb-2">Máte dotaz?</h2>
-    <h2 class="uppercase text-4xl mb-6">Kontaktujte nás!</h2>
+    <h2 class="uppercase text-4xl mb-2 font-heading text-center">Máte dotaz?</h2>
+    <h2 class="uppercase text-4xl mb-6 font-heading text-center">Kontaktujte nás!</h2>
     <input 
       type="text" 
       id="name" 

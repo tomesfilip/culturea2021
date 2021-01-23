@@ -1,7 +1,7 @@
 <template>
-<div class="lg:flex mx-auto lg:px-16 px-4 pb-6 pt-20 bg-lososPink">
-  <div class="flex-1 md:text-left text-center md:mb-0 mb-12">
-    <div class="black-icon md:block flex justify-center mb-12">
+<div class="flex lg:flex-row flex-col mx-auto lg:px-16 px-4 pb-6 pt-20 bg-lososPink">
+  <div class="flex-1 lg:order-1 order-2 md:text-left text-center md:mb-0 mt-12">
+    <div class="black-icon md:block hidden mb-12">
       <img src="../assets/img/icon-black.png" alt="culturea čierne logo">
     </div>
     <div class="contacts mb-12 grid md:grid-cols-2 grid-cols-1 gap-y-6">
@@ -43,7 +43,7 @@
     </div>
     <h4 class="font-bold">#letenkunepotrebuješ</h4>
   </div>  
-  <Form />
+  <Form class="lg:order-2 order-1" />
 </div>
   
 </template>

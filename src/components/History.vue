@@ -1,6 +1,6 @@
 <template>
   <Container class="lg:px-28 md:px-20 text-center">
-    <h2 class="uppercase text-4xl mb-8">Historie</h2>
+    <h2 class="uppercase text-4xl mb-8 font-heading">Historie</h2>
     <div class="gg-border-style-dashed"></div>
     <div
       class="history-items md:text-left text-center"

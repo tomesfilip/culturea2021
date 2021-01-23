@@ -1,7 +1,7 @@
 <template>
   <div class="about-top py-24">
     <Container class="text-center lg:w-1/3 md:w-1/2 md:px-0 px-4">
-        <h2 class="uppercase text-4xl mb-4 ml-4">O festivalu</h2>
+        <h2 class="uppercase text-4xl mb-4 ml-4 font-heading">O festivalu</h2>
       <article>
         <p class="mb-4">Culturea je cestovatelský projekt, který každoročně pořádají studenti Fakulty multimediálních komunikací<br>Univerzity Tomáše Bati ve Zlíně.</p>
         <p class="mb-2">Culturea je festival o dvou zemích, kde se představí to nejlepší z nich. Místní delikatesy, národní tradice, zvyky - zkrátka vše, čím je země výjimečná.</p>

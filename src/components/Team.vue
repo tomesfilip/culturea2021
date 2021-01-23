@@ -1,6 +1,6 @@
 <template>
   <Container class="lg:px-28 md:px-4 text-center">
-    <h2 class="uppercase text-4xl">Náš team</h2>
+    <h2 class="uppercase text-4xl font-heading">Náš team</h2>
     <vueper-slides
       class="no-shadow md:pt-16 pt-12 px-4"
       :visible-slides="4"
@@ -8,7 +8,7 @@
       :gap="5"
       :slide-ratio="1 / 4"
       :dragging-distance="100"
-      :breakpoints="{ 800: { visibleSlides: 2, slideMultiple: 2, arrows: false, slideRatio: 0.6 } }">
+      :breakpoints="{ 800: { visibleSlides: 2, slideMultiple: 2, arrows: false, slideRatio: 0.6, bullets: false } }">
       <template v-slot:arrow-left>
         <i class="slider-arrow" />
       </template>
