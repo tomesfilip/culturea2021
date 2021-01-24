@@ -1,12 +1,13 @@
 <template>
-  <HereMap />
+  <Mapbox />
 </template>
 
 <script>
 import HereMap from '../components/HereMap.vue'
+import Mapbox from '../components/Mapbox.vue'
 
 export default {
-  components: { HereMap }
+  components: { HereMap, Mapbox }
 }
 </script>
 

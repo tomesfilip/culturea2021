@@ -1,6 +1,6 @@
 <template>
   <Container class="xl:w-1/2 lg:w-2/3 text-center px-4">
-    <h3 class="uppercase text-3xl mb-16 ml-4">KE STAŽENÍ</h3>
+    <h3 class="uppercase text-3xl mb-16 ml-4 font-heading">KE STAŽENÍ</h3>
     <div class="download-items flex flex-wrap justify-center flex-col sm:flex-row text-green font-bold">
       <DownloadItem v-for="downloadItem in downloadItems" :key="downloadItem" :downloadItem="downloadItem" :imgSrc="downloadItem.img" />
     </div>

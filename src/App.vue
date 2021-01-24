@@ -17,7 +17,6 @@ import Slider from './components/Slider.vue'
 import About from './components/About.vue'
 import VisitUsOnline from './components/VisitUsOnline.vue'
 import Program from './components/Program.vue'
-import Map from './components/Map.vue'
 import Team from './components/Team.vue'
 import Partners from './components/Partners.vue'
 import History from './components/History.vue'
@@ -34,7 +33,6 @@ export default {
     About,
     VisitUsOnline,
     Program,
-    Map,
     Team,
     Partners,
     History,
