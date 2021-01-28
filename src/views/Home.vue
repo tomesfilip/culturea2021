@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <section id="slider" class="pt-12 mb:pb-32 pb-0">
+    <section id="slider" class="mb:pb-32 pb-0">
       <Slider />
     </section>
     <section id="about" class="py-12">
