@@ -37,9 +37,6 @@
       <a href="https://www.facebook.com/Culturea" target="_blank">
         <img src="../assets/img/socials/fb.png" alt="facebook">
       </a>
-      <a href="https://www.youtube.com/user/jsmeculturea" target="_blank">
-        <img src="../assets/img/socials/yt.png" alt="youtube">        
-      </a>
     </div>
     <h4 class="font-bold">#letenkunepotrebuješ</h4>
   </div>  
