@@ -27,14 +27,14 @@ module.exports = {
     extend: {      
       colors: {
         red: '#C42729',
-        yellow: '#EAF1D0',
-        oliveGreen: '#66B06E',
         lososPink: '#DD8C83',
         grey: '#E0DEDE',
         lightGrey: '#E9E9E9',
+        darkGrey: '#4B4B4B',
         greyOp50: '#DFB5B0',
         green: '#1BB36C',
-        darkGrey: '#4B4B4B'
+        lightGreen: '#BDD796',
+        darkGreen: '#A4CA7E'
       }
     },
   },

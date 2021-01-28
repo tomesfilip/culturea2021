@@ -17,8 +17,7 @@
         <p class="pb-4">K mape</p>
         <img src="../assets/img/arrow-down.svg" alt="zelená šipka" 
           class="w-8 mx-auto h-auto animate-bounce">
-      </div>
-        
+      </div>        
       </router-link>
   </Container>
     

@@ -18,9 +18,9 @@
       cols="20"
       rows="10" 
       placeholder="Vaše zpráva" 
-      class="w-full my-4 p-4 max-h-48 placeholder-black focus:outline-none resize-none bg-greyOp50">
+      class="w-full my-4 p-4 max-h-48 placeholder-black focus:outline-none resize-none bg-darkGreen">
     </textarea>
-    <button class="font-bold w-full py-4 text-xl bg-yellow">Poslat</button>
+    <button class="font-bold w-full py-4 text-xl bg-darkGreen">Poslat</button>
   </form>
 </template>
 
