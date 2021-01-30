@@ -1,11 +1,11 @@
 <template>
   <nav id="nav" 
-    class="py-4 lg:px-12 flex justify-between items-center flex-wrap lg:flex-nowrap overflow-hidden"
+    class="lg:py-4 py-6 lg:px-12 flex justify-between items-center flex-wrap lg:flex-nowrap overflow-hidden border-b-2"
     :class="{ active: isActive }">
     <div class="top-menu px-12 lg:px-0 w-full lg:w-auto items-center flex justify-between z-10">
       <div class="logo">
         <router-link :to="{ name: 'Home' }">
-          <img src="../assets/img/logo-green.svg" alt="culturea červené logo">
+          <img src="../assets/img/logo-green.svg" alt="culturea červené logo" class="w-auto lg:h-10 h-8">
         </router-link>
       </div>
       <div 
