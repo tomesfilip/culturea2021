@@ -1,10 +1,10 @@
 <template>
   <div class="flex justify-between">
     <a href="https://www.instagram.com/culturea/" target="_blank">
-        <img src="../assets/img/socials/ig.png" alt="instagram" class="w-auto h-8">
+        <img src="../assets/img/socials/ig.png" alt="instagram" class="w-auto md:h-8 h-6">
       </a>
       <a href="https://www.facebook.com/Culturea/" target="_blank">
-        <img src="../assets/img/socials/fb.png" alt="facebook" class="w-auto h-8">
+        <img src="../assets/img/socials/fb.png" alt="facebook" class="w-auto md:h-8 h-6">
       </a>
   </div>
 </template>
