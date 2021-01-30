@@ -32,10 +32,10 @@
     </div>
     <div class="inline-flex m:w-40 space-x-4 mb-2">
       <a href="https://www.instagram.com/culturea/" target="_blank">
-        <img src="../assets/img/socials/ig.png" alt="instagram">
+        <img src="../assets/img/socials/ig.svg" alt="instagram">
       </a>
       <a href="https://www.facebook.com/Culturea" target="_blank">
-        <img src="../assets/img/socials/fb.png" alt="facebook">
+        <img src="../assets/img/socials/fb.svg" alt="facebook">
       </a>
     </div>
     <h4 class="font-bold">#letenkunepotrebuješ</h4>
