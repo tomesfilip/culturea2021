@@ -52,12 +52,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* @media only screen and (min-width: 768px) {
-  #organizer {
-    background: no-repeat left url('./assets/img/organizer/leave-branch.svg'), no-repeat right url('./assets/img/organizer/branch.svg');
-    background-size: 6.5rem;
-  }
-} */
 @media only screen and (min-width: 1024px) {
   #organizer {
     background-size: 8rem;

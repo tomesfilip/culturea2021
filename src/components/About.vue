@@ -35,12 +35,6 @@ export default {
 </script>
 
 <style>
-/* @media only screen and (min-width: 768px) {
-  .about-top {
-    background: no-repeat left url('../assets/img/about/leaves-branch.svg'), no-repeat right url('../assets/img/about/leave-branch.svg');
-    background-size: 6.5rem;
-  }  
-} */
 @media only screen and (min-width: 1024px) {
   .about-top {
     background-size: 10rem;

@@ -53,20 +53,10 @@ export default {
 </script>
 
 <style>
-/* @media only screen and (min-width: 768px) {
-  #visit-us-online {
-    background: no-repeat left bottom url('../assets/img/visit-us-online/branch.svg'), no-repeat right bottom url('../assets/img/visit-us-online/leaves-branch.svg');
-    background-size: 6.5rem;
-  }  
-} */
 @media only screen and (min-width: 1024px) {
   #visit-us-online {
     background-size: 10rem;
   }
-}
-
-@media only screen and (min-width: 1024px) {
-  
 }
 
 #visit-us-online {
