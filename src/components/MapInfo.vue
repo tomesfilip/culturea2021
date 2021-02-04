@@ -3,9 +3,15 @@
     <div class="info sm:w-1/2 w-3/4 mb-8 lg:text-left text-center">
       <h2 class="text-4xl uppercase font-heading mb-4">Mapa<br>festivalu</h2>
       <p class="mb-6 lg:w-3/4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam fugit dolorem quibusdam aperiam adipisci quisquam quia molestiae esse iste, blanditiis distinctio ipsum eaque laudantium consectetur molestias delectus quam inventore suscipit, unde non.</p>
-      <router-link :to="{ name: 'MainMap' }" class="lg:inline-flex hidden text-2xl uppercase items-center text-green font-heading">
+      <router-link :to="{ name: 'MainMap' }" 
+        class="lg:inline-flex hidden text-2xl uppercase items-center text-green font-heading"
+        @mouseover="arrowHovered = true" @mouseleave="arrowHovered = false">
         K mape
-        <span><img src="../assets/img/arrow.png" alt="zelená šipka" class="ml-2 mt-2 w-3/5 h-auto"></span>
+        <span>
+          <img src="../assets/img/arrow.png" alt="zelená šipka" 
+              class="ml-2 mt-2 w-3/5 h-auto transition-transform"
+              :class="{ 'transform translate-x-1.5': arrowHovered }">
+        </span>
       </router-link>
     </div>
     <div class="image-part lg:w-3/4 w-3/4">
@@ -28,7 +34,12 @@ import Container from './Container.vue'
 
 
 export default {
-  components: { Container }
+  components: { Container },
+  data() {
+    return{
+      arrowHovered: false
+    }
+  }
 }
 </script>
 

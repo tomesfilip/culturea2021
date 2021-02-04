@@ -9,10 +9,11 @@
       <button 
         class="mt-4 font-bold inline-flex items-center text-green text-lg focus:outline-none"
         @click="scroll"
-      >
+        @mouseover="arrowHovered = true" @mouseleave="arrowHovered = false">
         Historie festivalu
         <span>
-          <img src="../assets/img/arrow.png" alt="šipka" class="w-6 mt-1.5 ml-2">
+          <img src="../assets/img/arrow.png" alt="šipka" class="w-6 mt-1.5 ml-2 transition-transform"
+          :class="{ 'transform translate-x-1.5': arrowHovered }">
         </span>
       </button>  
     </Container>
@@ -25,6 +26,11 @@ import Container from './Container.vue'
 import Quiz from './Quiz.vue'
 export default {
   components: { Container, Quiz },
+  data() {
+    return {
+      arrowHovered: false
+    }
+  },
   methods: {
     scroll() {
       const section = document.getElementById('history')

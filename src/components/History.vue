@@ -14,8 +14,9 @@
     </div>
     <button 
       class="text-center w-24 mt-8 font-bold inline-flex items-center justify-center text-green text-lg focus:outline-none"
-      @click="toggleShowedAll"  
-    >
+      @click="toggleShowedAll"
+      @mouseover="arrowHovered = true"
+      @mouseleave="arrowHovered = false">
       <div class="text w-16">
         {{ nextBtnText }}
       </div>
@@ -23,8 +24,12 @@
         <img 
           src="../assets/img/arrow.png" 
           alt="šípka" 
-          class="w-6 mt-1.5 transition-transform"
-          :class="{ 'transform md:rotate-180 -rotate-90': showedAll, 'transform md:rotate-0 rotate-90': !showedAll }"  
+          class="history-arrow w-6 mt-1.5 transition-transform"
+          :class="{
+                    'transform md:rotate-180 -rotate-90': showedAll, 
+                    'transform md:rotate-0 rotate-90': !showedAll ,
+                    'transform translate-x-1.5': arrowHovered
+                  }"  
         >          
       </span>
     </button>
@@ -39,6 +44,7 @@ export default {
   components: { HistoryItem, Container },
   data() {
     return {
+      arrowHovered: false,
       showedAll: false,
       nextBtnText: "Další",
       historyItems: [
