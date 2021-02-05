@@ -15,19 +15,19 @@
       <div class="date">
         <p class="font-heading xl:text-4xl lg:text-2xl sm:text-base text-sm">9.–11. dubna 2021</p>
       </div>
-      <div class="bullets mt-2">
-        <button 
+      <div class="bullets mt-4 flex">
+        <div 
           name="left-bullet-btn"
-          class="outline-none focus:outline-none rounded-full mr-2 p-2"
+          class="rounded-full w-4 h-4 mr-2 cursor-pointer"
           :class="{ 'bg-green' : isPoland, 'bg-grey' : !isPoland }"
           @click="changeToPoland">
-        </button>
-        <button 
+        </div>
+        <div 
           name="right-bullet-btn"
-          class="outline-none focus:outline-none rounded-full mr-2 p-2"
+          class="rounded-full w-4 h-4 cursor-pointer"
           :class="{ 'bg-green' : !isPoland, 'bg-grey' : isPoland }"
           @click="changeToIran">
-        </button>
+        </div>
       </div>
       <div class="w-20 absolute bottom-0 pb-8 md:block hidden">
         <Socials />
