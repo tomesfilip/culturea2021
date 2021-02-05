@@ -31,10 +31,10 @@
       </div>
     </div>
     <div class="inline-flex m:w-40 space-x-4 mb-2">
-      <a href="https://www.instagram.com/culturea/" target="_blank">
+      <a href="https://www.instagram.com/culturea/" target="_blank" rel="noopener">
         <img src="../assets/img/socials/ig.svg" alt="instagram">
       </a>
-      <a href="https://www.facebook.com/Culturea" target="_blank">
+      <a href="https://www.facebook.com/Culturea" target="_blank" rel="noopener">
         <img src="../assets/img/socials/fb.svg" alt="facebook">
       </a>
     </div>

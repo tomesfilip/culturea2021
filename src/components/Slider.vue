@@ -17,11 +17,13 @@
       </div>
       <div class="bullets mt-2">
         <button 
+          name="left-bullet-btn"
           class="outline-none focus:outline-none rounded-full mr-2 p-2"
           :class="{ 'bg-green' : isPoland, 'bg-grey' : !isPoland }"
           @click="changeToPoland">
         </button>
         <button 
+          name="right-bullet-btn"
           class="outline-none focus:outline-none rounded-full mr-2 p-2"
           :class="{ 'bg-green' : !isPoland, 'bg-grey' : isPoland }"
           @click="changeToIran">
@@ -32,7 +34,7 @@
       </div>   
     </div>       
     <div class="img-section md:w-3/5 w-full right-0">
-    <img :src="actualPhoto" media="(min-width:640px)" :srcset="polandImg" :alt="btnText" class="w-full">
+    <img :src="actualPhoto" :alt="btnText" class="w-full">
     </div>
   </div>
   <div class="gg-border-style-dashed -mt-2"></div>
@@ -85,6 +87,4 @@ export default {
   .main-slider {
     padding: 0;
   }
-  
-
 </style>
