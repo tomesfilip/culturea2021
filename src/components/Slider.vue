@@ -9,11 +9,11 @@
       @click="changeCountry">
         {{ btnText }}
       </h2>
-      <div class="info-text my-4 sm:text-base text-sm">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aliquid..</p>
+      <div class="info-text mt-4 sm:text-base text-sm xl:h-20">
+        <p>{{ countryText }}</p>
       </div>
       <div class="date">
-        <p class="font-heading xl:text-4xl lg:text-2xl sm:text-base text-sm">9.–11. dubna 2021</p>
+        <p class="font-heading xl:text-4xl lg:text-2xl sm:text-base text-sm mt-4">9.–11. dubna 2021</p>
       </div>
       <div class="bullets mt-4 flex">
         <div 
@@ -55,6 +55,9 @@ export default {
       isPoland: true,
       btnText: 'polsko',
       actualPhoto: null,
+      iranText: 'Země, ve které hraje náboženství velkou roli. Jedna z nejstarších civilizací, která má co rozhodně nabídnout.',
+      polandText: 'Země plná nádherných zámků, skvělého jídla, ale také bojů o základní lidská práva...',
+      countryText: 'Země plná nádherných zámků, skvělého jídla, ale také bojů o základní lidská práva...'
     }
   },
   methods: {
@@ -62,16 +65,19 @@ export default {
       this.isPoland = !this.isPoland
       this.btnText = this.isPoland ? 'polsko' : 'írán'
       this.actualPhoto = this.isPoland ? polandImg : iranImg
+      this.countryText = this.isPoland ? this.polandText : this.iranText
     },
     changeToPoland() {
       this.isPoland = true
       this.btnText = 'polsko'
       this.actualPhoto = this.isMobView ? polandMobImg : polandImg
+      this.countryText = this.polandText
     },
     changeToIran() {
       this.isPoland = false
       this.btnText = 'írán'
       this.actualPhoto = this.isMobView ? iranMobImg : iranImg
+      this.countryText = this.iranText
     }
   },
   mounted() {

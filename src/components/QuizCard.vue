@@ -32,14 +32,7 @@ export default {
 </script>
 
 <style>
-
 .quiz-card-text.answer {
   white-space: pre-wrap; 
-}
-
-@media only screen and (min-width: 1236px) {
-  .quiz-card {
-    height: 28rem;
-  }
 }
 </style>

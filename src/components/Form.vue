@@ -20,7 +20,7 @@
       placeholder="Vaše zpráva" 
       class="w-full my-4 p-4 max-h-48 placeholder-black focus:outline-none resize-none bg-darkGreen">
     </textarea>
-    <button class="font-bold w-full py-4 text-xl bg-darkGreen">Poslat</button>
+    <button class="font-bold w-full py-4 text-xl bg-darkGreen" disabled>Poslat</button>
   </form>
 </template>
 

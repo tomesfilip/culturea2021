@@ -14,8 +14,7 @@
           @click="quizCard.isAnswer = !quizCard.isAnswer"
         />      
       </div>
-    </div>
-    
+    </div> 
   </Container>  
 </template>
 
@@ -122,4 +121,9 @@ export default {
 </script>
 
 <style>
+/* @media only screen and (min-width: 1000px) {
+  .quiz {
+    height: 120vh;
+  }
+} */
 </style>
