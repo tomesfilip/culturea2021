@@ -22,13 +22,13 @@
 import Container from './Container.vue'
 import QuizCard from './QuizCard.vue'
 
-import card1Img from '../assets/img/about/cards/card1.svg'
-import card2Img from '../assets/img/about/cards/card2.svg'
-import card3Img from '../assets/img/about/cards/card3.svg'
-import card4Img from '../assets/img/about/cards/card4.svg'
-import card5Img from '../assets/img/about/cards/card5.svg'
-import card6Img from '../assets/img/about/cards/card6.svg'
-import card7Img from '../assets/img/about/cards/card7.svg'
+import card1Img from '../assets/img/about/cards/card1.png'
+import card2Img from '../assets/img/about/cards/card2.png'
+import card3Img from '../assets/img/about/cards/card3.png'
+import card4Img from '../assets/img/about/cards/card4.png'
+import card5Img from '../assets/img/about/cards/card5.png'
+import card6Img from '../assets/img/about/cards/card6.png'
+import card7Img from '../assets/img/about/cards/card7.png'
 
 export default {
   components: { Container, QuizCard },
