@@ -1,12 +1,12 @@
 <template>
-  <div v-if="!quizCard.isAnswer" class="quiz-card flex flex-col overflow-hidden h-80 mobile:h-96 sm:h-80 md:h-96">
+  <div v-if="!quizCard.isAnswer" class="quiz-card flex flex-col overflow-hidden h-72 sm-mobile:h-80 mobile:h-96 sm:h-80 md:h-96">
     <img :src="quizCard.img"  :alt="quizCard.alt" class="w-full h-3/4 object-cover">
-    <div class="quiz-card-text text-center h-full flex items-center justify-center bg-black text-white 3xl:px-20 xl:px-12 px-2 py-8">
+    <div class="quiz-card-text text-center h-full flex items-center justify-center bg-black text-white 3xl:px-20 xl:px-12 px-2 sm-mobile:py-8 py-4">
       {{ quizCard.cardText }}
     </div>
   </div>
   <div    
-    v-else class="quiz-card answer bg-green flex justify-center items-center h-80 mobile:h-96 sm:h-80 md:h-96">
+    v-else class="quiz-card answer bg-green flex justify-center items-center h-72 sm-mobile:h-80 mobile:h-96 sm:h-80 md:h-96">
     <div class="quiz-card-text answer text-center text-black md:px-16 px-8">
       <h4 v-if="quizCard.answer.titleOne" class="font-bold mb-1" :class="{ 'text-2xl': quizCard.answer.isBig }">
         {{ quizCard.answer.titleOne}}
@@ -35,5 +35,11 @@ export default {
 
 .quiz-card-text.answer {
   white-space: pre-wrap; 
+}
+
+@media only screen and (min-width: 1236px) {
+  .quiz-card {
+    height: 28rem;
+  }
 }
 </style>

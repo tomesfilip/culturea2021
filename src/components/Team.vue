@@ -226,6 +226,4 @@ export default {
   height: 60px;
   background: url('../assets/img/sliderArrow.svg') no-repeat content-box;
 }
-
-
 </style>
