@@ -28,6 +28,7 @@ export default {
         {
           img: 'media/visual.svg',
           alt: 'deska na malování',
+          link: 'https://drive.google.com/file/d/147NbZeZBTAtlQJ75JdLLBOfsIjSYSBHE/view?usp=sharing',
           text: 'Vizuál 2021'
         }
       ]
