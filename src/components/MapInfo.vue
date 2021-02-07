@@ -2,7 +2,7 @@
   <Container class="xl:px-32 lg:px-12 px-8 flex items-center lg:justify-around lg:flex-row flex-col">
     <div class="info sm:w-1/2 w-3/4 mb-8 lg:text-left text-center">
       <h2 class="text-4xl uppercase font-heading mb-4">Mapa<br>festivalu</h2>
-      <p class="mb-6 lg:w-3/4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam fugit dolorem quibusdam aperiam adipisci quisquam quia molestiae esse iste, blanditiis distinctio ipsum eaque laudantium consectetur molestias delectus quam inventore suscipit, unde non.</p>
+      <p class="mb-6 lg:w-3/4">Přehled všech bodů, kde na Vás čekají smyslové instalace. Také nezapomeňte navštívit zahraniční kuchyni přímo ve Zlíně.</p>
       <router-link :to="{ name: 'MainMap' }" 
         class="lg:inline-flex hidden text-2xl uppercase items-center text-green font-heading"
         @mouseover="arrowHovered = true" @mouseleave="arrowHovered = false">

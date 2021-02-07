@@ -8,34 +8,30 @@
       :gap="5"
       :slide-ratio="1 / 4"
       :dragging-distance="100"
-      :breakpoints="{ 800: { visibleSlides: 2, slideMultiple: 2, arrows: false, slideRatio: 0.6, bullets: false } }">
+      :breakpoints="{ 820: { visibleSlides: 2, slideMultiple: 2, arrows: false, slideRatio: 0.6, bullets: false } }">
       <template v-slot:arrow-left>
         <i class="slider-arrow" />
       </template>
-
       <template v-slot:arrow-right>
         <i class="slider-arrow transform rotate-180" />
       </template>
       <vueper-slide 
-        v-for="(teamMember, name) in teamMembers" 
+        v-for="(teamMember, name, photo) in teamMembers" 
         :key="name" 
-        class="member flex bg-darkGrey"
-      >
+        class="member flex bg-darkGrey">
         <template v-slot:content>
-          <div class="vueperslide__content-wrapper justify-end bg-darkGrey">
-            <div class="member-photo w-full">
-
+          <div class="vueperslide__content-wrapper justify-end bg-darkGrey flex">
+            <div class="member-photo h-2/3">
+              <img v-if=teamMember.photo :src="teamMember.photo" :alt="teamMember.name" class="w-full h-full object-cover">
             </div>
-            <figcaption class="member-name md:h-20 h-14 bg-green w-full px-2 flex items-center justify-center text-yellow">
+            <figcaption class="member-name h-1/3 bg-green w-full px-2 flex items-center justify-center text-yellow">
               {{ teamMember.name }}
             </figcaption>
           </div>
         </template>
       </vueper-slide>
-    </vueper-slides>
-  
+    </vueper-slides>  
   </Container>
-
 </template>
 
 <script>
@@ -44,79 +40,101 @@ import TeamMember from './TeamMember.vue'
 import { VueperSlides, VueperSlide } from 'vueperslides'
 import 'vueperslides/dist/vueperslides.css'
 
+import AK from '../assets/img/team/AK.jpg'
+import AM from '../assets/img/team/AM.jpg'
+import AT from '../assets/img/team/AT.jpg'
+import AV from '../assets/img/team/AV.jpg'
+import BB from '../assets/img/team/BB.jpg'
+import BF from '../assets/img/team/BF.jpg'
+import BN from '../assets/img/team/BN.jpg'
+import DK from '../assets/img/team/DK.jpg'
+import FT from '../assets/img/team/FT.jpg'
+import KM from '../assets/img/team/KM.jpg'
+import KT from '../assets/img/team/KT.jpg'
+import LB from '../assets/img/team/LB.jpg'
+import LM from '../assets/img/team/LM.jpg'
+import LN from '../assets/img/team/LN.jpg'
+import ME from '../assets/img/team/ME.jpg'
+import MT from '../assets/img/team/MT.jpg'
+import RS from '../assets/img/team/RS.jpg'
+import RV from '../assets/img/team/RV.jpg'
+import SH from '../assets/img/team/SH.jpg'
+import TB from '../assets/img/team/TB.jpg'
+import ZP from '../assets/img/team/ZP.jpg'
+
 export default {
   components: { TeamMember, Container, VueperSlides, VueperSlide },
   data() {
     return {
       teamMembers: [
         {
-          photo: '',
+          photo: ME,
           name: 'Michaela Eliášová'
         },
         {
-          photo: '',
+          photo: LN,
           name: 'Lucia Novotná'
         },
         {
-          photo: '',
+          photo: LB,
           name: 'Lukáš Bouška'
         },         
         {
-          photo: '',
+          photo: AT,
           name: 'Aneta Tomanová'
         },
         {
-          photo: '',
+          photo: LM,
           name: 'Lucie Monsportová'
         },
         {
-          photo: '',
+          photo: AV,
           name: 'Anna Vrbková'
         },
         {
-          photo: '',
+          photo: BF,
           name: 'Bára Fotrová'
         },
         {
-          photo: '',
-          name: 'Bára Navrátilová'
-        },
-        {
-          photo: '',
+          photo: BN,
           name: 'Kristína Mlynárová'
         },
         {
-          photo: '',
+          photo: KM,
+          name: 'Bára Navrátilová '
+        },
+        {
+          photo: MT,
           name: 'Martin Tomiga'
         },
         {
-          photo: '',
+          photo: RV,
           name: 'Radka Vybíralová'
         },
         {
-          photo: '',
+          photo: AK,
           name: 'Anežka Karvanová'
         },
         {
-          photo: '',
+          photo: AM,
           name: 'Anna Marenčáková'
         },
         {
-          photo: '',
+          photo: BB,
           name: 'Barbora Březíková'
         },
         {
-          photo: '',
-          name: 'Vojtěch Vaník'
-        },
+          photo: RS,
+          name: 'Rastislav Škojec'
+        },        
         {
-          photo: '',
+          photo: SH,
           name: 'Simona Hazuchová'
         },
         {
           photo: '',
-          name: 'Rastislav Škojec'
-        },
+          name: 'Vojtěch Vaník'
+        },        
         {
           photo: '',
           name: 'Veronika Ištvánková'
@@ -126,19 +144,19 @@ export default {
           name: 'Jan Vilímek'
         },
         {
-          photo: '',
+          photo: TB,
           name: 'Tereza Brlicová'
         },
         {
-          photo: '',
+          photo: LM,
           name: 'Lucia Mišeková'
         },
         {
-          photo: '',
+          photo: ZP,
           name: 'Zuzana Pevná'
         },
         {
-          photo: '',
+          photo: KT,
           name: 'Kateřina Turková'
         },
         {
@@ -146,7 +164,7 @@ export default {
           name: 'Romana Červenková'
         },
         {
-          photo: '',
+          photo: DK,
           name: 'Daniela Kačeriaková'
         },        
         {
@@ -162,7 +180,7 @@ export default {
           name: 'Valéria Balážová'
         },
         {
-          photo: '',
+          photo: FT,
           name: 'Filip Tomeš'
         },
         {

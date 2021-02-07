@@ -55,7 +55,7 @@ export default {
       isPoland: true,
       btnText: 'polsko',
       actualPhoto: null,
-      iranText: 'Země, ve které hraje náboženství velkou roli. Jedna z nejstarších civilizací, která má co rozhodně nabídnout.',
+      iranText: 'Země, ve které hraje náboženství velkou roli. Jedna z nejstarších civilizací, která má rozhodně co nabídnout.',
       polandText: 'Země plná nádherných zámků, skvělého jídla, ale také bojů o základní lidská práva...',
       countryText: 'Země plná nádherných zámků, skvělého jídla, ale také bojů o základní lidská práva...'
     }
