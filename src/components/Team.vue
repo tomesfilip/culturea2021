@@ -8,7 +8,10 @@
       :gap="5"
       :slide-ratio="1 / 4"
       :dragging-distance="100"
-      :breakpoints="{ 820: { visibleSlides: 2, slideMultiple: 2, arrows: false, slideRatio: 0.6, bullets: false } }">
+      :breakpoints="{ 
+        820: { visibleSlides: 2, slideMultiple: 2, arrows: false, slideRatio: 0.6, bullets: false },
+        1280: { visibleSlides: 3, slideMultiple: 3, arrows: true, slideRatio: 0.4, bullets: true }
+      }">
       <template v-slot:arrow-left>
         <i class="slider-arrow" />
       </template>
@@ -24,8 +27,9 @@
             <div class="member-photo h-2/3">
               <img v-if=teamMember.photo :src="teamMember.photo" :alt="teamMember.name" class="w-full h-full object-cover">
             </div>
-            <figcaption class="member-name h-1/3 bg-green w-full px-2 flex items-center justify-center text-yellow">
-              {{ teamMember.name }}
+            <figcaption class="member-name h-1/3 bg-green w-full px-2 flex flex-col items-center justify-center text-yellow">
+              <p class="font-bold mobile:text-lg mb-2">{{ teamMember.name }}</p>
+              <p class="uppercase mobile:block hidden text-sm 2xl:text-base">{{ teamMember.position }}</p>
             </figcaption>
           </div>
         </template>
@@ -69,144 +73,184 @@ export default {
       teamMembers: [
         {
           photo: ME,
-          name: 'Michaela Eliášová'
+          name: 'Michaela Eliášová',
+          position: 'project manager'
         },
         {
           photo: LN,
-          name: 'Lucia Novotná'
+          name: 'Lucia Novotná',
+          position: 'project manager'
         },
         {
           photo: LB,
-          name: 'Lukáš Bouška'
+          name: 'Lukáš Bouška',
+          position: 'production manager'
         },         
         {
           photo: AT,
-          name: 'Aneta Tomanová'
+          name: 'Aneta Tomanová',
+          position: 'production'
         },
         {
           photo: LMo,
-          name: 'Lucie Monsportová'
+          name: 'Lucie Monsportová',
+          position: 'production'
         },
         {
           photo: AV,
-          name: 'Anna Vrbková'
+          name: 'Anna Vrbková',
+          position: 'production'
         },
         {
           photo: BF,
-          name: 'Bára Fotrová'
+          name: 'Bára Fotrová',
+          position: 'production'
         },
         {
-          photo: BN,
-          name: 'Kristína Mlynárová'
+          photo: LN,
+          name: 'Lucia Novotná',
+          position: 'promo manager'
         },
         {
           photo: KM,
-          name: 'Bára Navrátilová '
+          name: 'Bára Navrátilová',
+          position: 'promo'
+        },
+        {
+          photo: BN,
+          name: 'Kristína Mlynárová',
+          position: 'promo'
         },
         {
           photo: MT,
-          name: 'Martin Tomiga'
+          name: 'Martin Tomiga',
+          position: 'PR manager'
         },
         {
           photo: RV,
-          name: 'Radka Vybíralová'
+          name: 'Radka Vybíralová',
+          position: 'PR'
         },
         {
           photo: AK,
-          name: 'Anežka Karvanová'
+          name: 'Anežka Karvanová',
+          position: 'PR'
         },
         {
           photo: AM,
-          name: 'Anna Marenčáková'
+          name: 'Anna Marenčáková',
+          position: 'PR'
         },
         {
           photo: BB,
-          name: 'Barbora Březíková'
+          name: 'Barbora Březíková',
+          position: 'fundraising manager'
+        },
+        {
+          photo: '',
+          name: 'Vojtěch Vaník',
+          position: 'fundraising'
         },
         {
           photo: RS,
-          name: 'Rastislav Škojec'
+          name: 'Rastislav Škojec',
+          position: 'fundraising'
         },        
         {
           photo: SH,
-          name: 'Simona Hazuchová'
+          name: 'Simona Hazuchová',
+          position: 'fundraising'
         },
         {
           photo: '',
-          name: 'Vojtěch Vaník'
-        },        
-        {
-          photo: '',
-          name: 'Veronika Ištvánková'
+          name: 'Veronika Ištvánková',
+          position: 'fundraising'
         },
         {
           photo: '',
-          name: 'Jan Vilímek'
+          name: 'Jan Vilímek',
+          position: 'fundraising'
         },
         {
           photo: TB,
-          name: 'Tereza Brlicová'
+          name: 'Tereza Brlicová',
+          position: 'art manager'
         },
         {
           photo: '',
-          name: 'Lucia Mišeková'
+          name: 'Lucia Mišeková',
+          position: 'art'
         },
         {
           photo: ZP,
-          name: 'Zuzana Pevná'
+          name: 'Zuzana Pevná',
+          position: 'art'
         },
         {
           photo: KT,
-          name: 'Kateřina Turková'
+          name: 'Kateřina Turková',
+          position: 'art'
         },
         {
           photo: '',
-          name: 'Romana Červenková'
+          name: 'Jan Gajdoš',
+          position: 'art'
         },
         {
           photo: DK,
-          name: 'Daniela Kačeriaková'
+          name: 'Daniela Kačeriaková',
+          position: 'art'
         },        
         {
           photo: '',
-          name: 'Polina Rodionova'
+          name: 'Polina Rodionova',
+          position: 'art'
         },
         {
           photo: '',
-          name: 'Anna Holasová'
+          name: 'Anna Holasová',
+          position: 'art'
         },
         {
           photo: '',
-          name: 'Valéria Balážová'
+          name: 'Valéria Balážová',
+          position: 'art'
         },
         {
           photo: FT,
-          name: 'Filip Tomeš'
+          name: 'Filip Tomeš',
+          position: 'art'
         },
         {
           photo: '',
-          name: 'Vendula Kopečná'
+          name: 'Branislav Kern',
+          position: 'video spot manager'
         },
         {
           photo: '',
-          name: 'Adam Faltus'
+          name: 'Vendula Kopečná',
+          position: 'video spot'
         },
         {
           photo: '',
-          name: 'Vincent Stránský'
+          name: 'Adam Faltus',
+          position: 'video spot'
         },
         {
           photo: '',
-          name: 'Michal Kuthan'
+          name: 'Vincent Stránský',
+          position: 'video spot'
         },
         {
           photo: '',
-          name: 'Matěj Voch'
+          name: 'Michal Kuthan',
+          position: 'video spot'
         },
         {
           photo: '',
-          name: 'Branislav Kern'
-        }
+          name: 'Matěj Voch',
+          position: 'video spot'
+        },
       ]
     }
   }

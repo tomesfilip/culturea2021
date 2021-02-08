@@ -95,7 +95,7 @@ export default {
         },
         {
           index: 6,
-          cardText: 'Místo konání festivalu?',
+          cardText: 'Kde se Culturea konala minulý rok?',
           img: card6Img,
           alt: 'koberec',
           isAnswer: false,
