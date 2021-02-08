@@ -9,8 +9,8 @@
       @click="changeCountry">
         {{ btnText }}
       </h2>
-      <div class="info-text mt-4 sm:text-base text-sm xl:h-20">
-        <p>{{ countryText }}</p>
+      <div class="info-text mt-4 sm:text-base text-sm lg:h-20 sm:h-28 mobile:h-32 h-48">
+        <p class="xl:text-lg">{{ countryText }}</p>
       </div>
       <div class="date">
         <p class="font-heading xl:text-4xl lg:text-2xl sm:text-base text-sm mt-4">9.–11. dubna 2021</p>
