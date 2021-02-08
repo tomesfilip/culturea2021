@@ -1,5 +1,5 @@
 <template>
-  <div class="about-top py-24">
+  <div class="about-top mobile:py-24">
     <Container class="text-center lg:w-1/3 md:w-1/2 md:px-0 px-4">
         <h2 class="uppercase text-4xl mb-4 ml-4 font-heading">O festivalu</h2>
       <article>

@@ -37,6 +37,9 @@ module.exports = {
         green: '#1BB36C',
         lightGreen: '#BDD796',
         darkGreen: '#A4CA7E'
+      },
+      height: {
+        xl: '28rem'
       }
     },
   },

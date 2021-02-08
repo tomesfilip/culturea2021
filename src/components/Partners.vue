@@ -1,8 +1,8 @@
 <template>
-  <h2 class="uppercase text-4xl mb-16 text-center font-heading">Partneři</h2>
+  <h2 class="uppercase text-4xl sm:mb-16 mb-12 text-center font-heading">Partneři</h2>
   <Container class="lg:px-16 px-4">
-    <div class="logos grid xl:grid-cols-4 md:grid-cols-3 mobile:grid-cols-2 grid-cols-1 gap-4 items-center">
-      <img v-for="(logo, logoName) in logos" :key="logoName" :src="logo.logoImg" :alt="logo.logoName">
+    <div class="logos grid xl:grid-cols-4 md:grid-cols-3 mobile:grid-cols-2 grid-cols-1 gap-4 items-center justify-items-center">
+      <img v-for="(logo, logoName) in logos" :key="logoName" :src="logo.logoImg" :alt="logo.logoName" class="sm:w-full w-1/2">
     </div>
   </Container>  
 </template>

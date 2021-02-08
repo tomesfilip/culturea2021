@@ -51,7 +51,6 @@ export default {
   components: { Socials },
   data() {
     return {
-      isMobView: false,
       isPoland: true,
       btnText: 'polsko',
       actualPhoto: null,
@@ -64,27 +63,33 @@ export default {
     changeCountry() {
       this.isPoland = !this.isPoland
       this.btnText = this.isPoland ? 'polsko' : 'írán'
-      this.actualPhoto = this.isPoland ? polandImg : iranImg
+      if (!this.checkMobView()) {
+        this.actualPhoto = this.isPoland ? polandImg : iranImg
+      }
+      else {
+        this.actualPhoto = this.isPoland ? polandMobImg : iranMobImg
+      }      
+      
       this.countryText = this.isPoland ? this.polandText : this.iranText
     },
     changeToPoland() {
       this.isPoland = true
       this.btnText = 'polsko'
-      this.actualPhoto = this.isMobView ? polandMobImg : polandImg
+      this.actualPhoto = this.checkMobView() ? polandMobImg : polandImg
       this.countryText = this.polandText
     },
     changeToIran() {
       this.isPoland = false
       this.btnText = 'írán'
-      this.actualPhoto = this.isMobView ? iranMobImg : iranImg
+      this.actualPhoto = this.checkMobView() ? iranMobImg : iranImg
       this.countryText = this.iranText
+    },
+    checkMobView() {
+      return window.innerWidth < 640
     }
   },
   mounted() {
-    window.innerWidth < 640 ? this.actualPhoto = polandMobImg : this.actualPhoto = polandImg
-  },
-  updated() {
-    window.innerWidth < 640 ? this.isMobView = true : this.isMobView = false
+    this.actualPhoto =  this.checkMobView() ? polandMobImg : polandImg
   }
 }
 </script>

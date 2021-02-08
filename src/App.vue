@@ -61,12 +61,11 @@ export default {
 }
 
 .fade-enter-active, .fade-leave-active {
-  transition-property: opacity;
-  transition-duration: .25s;
+  transition: opacity .6s ease;
 }
 
 .fade-enter-active {
-  transition-delay: .25s;
+  transition-delay: .6s;
 }
 
 .fade-enter, .fade-leave-active {

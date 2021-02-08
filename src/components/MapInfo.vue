@@ -3,7 +3,7 @@
     <div class="info sm:w-1/2 w-3/4 mb-8 lg:text-left text-center">
       <h2 class="text-4xl uppercase font-heading mb-4">Mapa<br>festivalu</h2>
       <p class="mb-6 lg:w-3/4">Přehled všech bodů, kde na Vás čekají smyslové instalace. Také nezapomeňte navštívit zahraniční kuchyni přímo ve Zlíně.</p>
-      <router-link :to="{ name: 'MainMap' }" 
+      <router-link :to="{ name: 'Home' }" 
         class="lg:inline-flex hidden text-2xl uppercase items-center text-green font-heading"
         @mouseover="arrowHovered = true" @mouseleave="arrowHovered = false">
         K mape
@@ -17,7 +17,7 @@
     <div class="image-part lg:w-3/4 w-3/4">
       <img src="../assets/img/map-info-img.png" alt="mapa festivalu">
     </div>
-    <router-link :to="{ name: 'MainMap' }"
+    <router-link :to="{ name: 'Home' }"
       class="lg:hidden text-2xl uppercase items-center text-green font-heading mt-8">
       <div>
         <p class="pb-4">K mape</p>

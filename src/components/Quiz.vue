@@ -1,8 +1,8 @@
 <template>
   <Container class="px-6 lg:px-0">
     <div class="bg-lightGrey p-8">
-      <div class="quiz grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-2 grid-rows-1">
-        <div class="quiz-card bg-white grid grid-cols-1 gap-y-32 p-4 h-80 mobile:h-96 sm:h-80 md:h-96">
+      <div class="quiz grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 gap-2">
+        <div class="quiz-card bg-white flex flex-col justify-between px-6 pt-4 h-72 sm-mobile:h-80 mobile:h-96 sm:h-80 md:h-96 3xl:h-xl">
           <p class="uppercase text-lososPink mb-4 text-xl font-bold">Zajímavé fakty</p>
           <h3 class="uppercase xl:text-4xl lg:text-3xl md:text-4xl text-2xl font-heading mb-8 xl:leading-normal">Rychlý kvíz<br>o festivalu culturea</h3>
         </div>
@@ -121,9 +121,4 @@ export default {
 </script>
 
 <style>
-/* @media only screen and (min-width: 1000px) {
-  .quiz {
-    height: 120vh;
-  }
-} */
 </style>
