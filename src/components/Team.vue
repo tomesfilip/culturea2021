@@ -52,7 +52,7 @@ import FT from '../assets/img/team/FT.jpg'
 import KM from '../assets/img/team/KM.jpg'
 import KT from '../assets/img/team/KT.jpg'
 import LB from '../assets/img/team/LB.jpg'
-import LM from '../assets/img/team/LM.jpg'
+import LMo from '../assets/img/team/LMo.jpg'
 import LN from '../assets/img/team/LN.jpg'
 import ME from '../assets/img/team/ME.jpg'
 import MT from '../assets/img/team/MT.jpg'
@@ -84,7 +84,7 @@ export default {
           name: 'Aneta Tomanová'
         },
         {
-          photo: LM,
+          photo: LMo,
           name: 'Lucie Monsportová'
         },
         {
@@ -148,7 +148,7 @@ export default {
           name: 'Tereza Brlicová'
         },
         {
-          photo: LM,
+          photo: '',
           name: 'Lucia Mišeková'
         },
         {
