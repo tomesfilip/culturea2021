@@ -1,6 +1,8 @@
 <template>
   <Nav />
-  <router-view />
+  <transition name="fade">
+    <router-view />
+  </transition>
   <section id="organizer" class="py-12">
     <Organizer />
   </section>
@@ -56,5 +58,18 @@ export default {
   #organizer {
     background-size: 8rem;
   }
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition-property: opacity;
+  transition-duration: .25s;
+}
+
+.fade-enter-active {
+  transition-delay: .25s;
+}
+
+.fade-enter, .fade-leave-active {
+  opacity: 0;
 }
 </style>

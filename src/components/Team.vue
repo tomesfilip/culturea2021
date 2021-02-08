@@ -16,7 +16,7 @@
         <i class="slider-arrow transform rotate-180" />
       </template>
       <vueper-slide 
-        v-for="(teamMember, name, photo) in teamMembers" 
+        v-for="(teamMember, name) in teamMembers" 
         :key="name" 
         class="member flex bg-darkGrey">
         <template v-slot:content>
@@ -202,6 +202,10 @@ export default {
         {
           photo: '',
           name: 'Matěj Voch'
+        },
+        {
+          photo: '',
+          name: 'Branislav Kern'
         }
       ]
     }
