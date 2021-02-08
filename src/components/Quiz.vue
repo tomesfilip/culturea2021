@@ -63,7 +63,7 @@ export default {
         },
         {
           index: 3,
-          cardText: 'Jaké zemi byli minuly rok?',
+          cardText: 'Jaké zemi byly minulý rok?',
           img: card3Img,
           alt: 'hory',
           isAnswer: false,

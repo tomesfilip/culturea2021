@@ -20,7 +20,7 @@
     <router-link :to="{ name: 'Home' }"
       class="lg:hidden text-2xl uppercase items-center text-green font-heading mt-8">
       <div>
-        <p class="pb-4">K mape</p>
+        <p class="pb-4">K mapě</p>
         <img src="../assets/img/arrow-down.svg" alt="zelená šipka" 
           class="w-8 mx-auto h-auto animate-bounce">
       </div>        

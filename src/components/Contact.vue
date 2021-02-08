@@ -38,7 +38,7 @@
         <img src="../assets/img/socials/fb.svg" alt="facebook">
       </a>
     </div>
-    <h4 class="font-bold">#letenkunepotrebuješ</h4>
+    <h4 class="font-bold">#letenkunepotrebujes</h4>
   </div>  
   <Form class="lg:order-2 order-1" />
 </div>
