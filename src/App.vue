@@ -61,7 +61,7 @@ export default {
 }
 
 .fade-enter-active, .fade-leave-active {
-  transition: opacity .6s ease;
+  transition: all .6s ease;
 }
 
 .fade-enter-active {
@@ -70,5 +70,6 @@ export default {
 
 .fade-enter, .fade-leave-active {
   opacity: 0;
+  transform: translateX(-100%);
 }
 </style>

@@ -45,27 +45,29 @@ import TeamMember from './TeamMember.vue'
 import { VueperSlides, VueperSlide } from 'vueperslides'
 import 'vueperslides/dist/vueperslides.css'
 
-import AK from '../assets/img/team/AK.jpg'
-import AM from '../assets/img/team/AM.jpg'
-import AT from '../assets/img/team/AT.jpg'
-import AV from '../assets/img/team/AV.jpg'
-import BB from '../assets/img/team/BB.jpg'
-import BF from '../assets/img/team/BF.jpg'
-import BN from '../assets/img/team/BN.jpg'
-import DK from '../assets/img/team/DK.jpg'
-import FT from '../assets/img/team/FT.jpg'
-import KM from '../assets/img/team/KM.jpg'
-import KT from '../assets/img/team/KT.jpg'
-import LB from '../assets/img/team/LB.jpg'
-import LMo from '../assets/img/team/LMo.jpg'
-import LN from '../assets/img/team/LN.jpg'
-import ME from '../assets/img/team/ME.jpg'
-import MT from '../assets/img/team/MT.jpg'
-import RS from '../assets/img/team/RS.jpg'
-import RV from '../assets/img/team/RV.jpg'
-import SH from '../assets/img/team/SH.jpg'
-import TB from '../assets/img/team/TB.jpg'
-import ZP from '../assets/img/team/ZP.jpg'
+import AK from '../assets/img/team/AK.webp'
+import AM from '../assets/img/team/AM.webp'
+import AT from '../assets/img/team/AT.webp'
+import AV from '../assets/img/team/AV.webp'
+import BB from '../assets/img/team/BB.webp'
+import BF from '../assets/img/team/BF.webp'
+import BN from '../assets/img/team/BN.webp'
+import DK from '../assets/img/team/DK.webp'
+import FT from '../assets/img/team/FT.webp'
+import KM from '../assets/img/team/KM.webp'
+import KT from '../assets/img/team/KT.webp'
+import LB from '../assets/img/team/LB.webp'
+import LMo from '../assets/img/team/LMo.webp'
+import LN from '../assets/img/team/LN.webp'
+import ME from '../assets/img/team/ME.webp'
+import MK from '../assets/img/team/MK.webp'
+import MT from '../assets/img/team/MT.webp'
+import PR from '../assets/img/team/PR.webp'
+import RS from '../assets/img/team/RS.webp'
+import RV from '../assets/img/team/RV.webp'
+import SH from '../assets/img/team/SH.webp'
+import TB from '../assets/img/team/TB.webp'
+import ZP from '../assets/img/team/ZP.webp'
 
 export default {
   components: { TeamMember, Container, VueperSlides, VueperSlide },
@@ -113,12 +115,12 @@ export default {
           position: 'promo manager'
         },
         {
-          photo: KM,
+          photo: BN,
           name: 'Bára Navrátilová',
           position: 'promo'
         },
         {
-          photo: BN,
+          photo: KM,
           name: 'Kristína Mlynárová',
           position: 'promo'
         },
@@ -203,7 +205,7 @@ export default {
           position: 'art'
         },        
         {
-          photo: '',
+          photo: PR,
           name: 'Polina Rodionova',
           position: 'art'
         },
@@ -243,7 +245,7 @@ export default {
           position: 'video spot'
         },
         {
-          photo: '',
+          photo: MK,
           name: 'Michal Kuthan',
           position: 'video spot'
         },

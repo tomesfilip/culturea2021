@@ -10,7 +10,7 @@
           v-for="(quizCard, index) in quizCards"
           :key="index"
           :quizCard="quizCard"
-          class="cursor-pointer"
+          class="cursor-pointer select-none h-72 sm-mobile:h-80 mobile:h-96 sm:h-80 md:h-96 3xl:h-xl"
           @click="quizCard.isAnswer = !quizCard.isAnswer"
         />      
       </div>
@@ -63,7 +63,7 @@ export default {
         },
         {
           index: 3,
-          cardText: 'Jaké zemi byly minulý rok?',
+          cardText: 'Jaké země byly minulý rok?',
           img: card3Img,
           alt: 'hory',
           isAnswer: false,

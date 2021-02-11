@@ -12,19 +12,19 @@
       <div class="info-text mt-4 sm:text-base text-sm lg:h-20 sm:h-28 mobile:h-32 h-48">
         <p class="xl:text-lg">{{ countryText }}</p>
       </div>
-      <div class="date">
-        <p class="font-heading xl:text-4xl lg:text-2xl sm:text-base text-sm mt-4">9.–11. dubna 2021</p>
+      <div class="date mt-4 xl:mt-16">
+        <p class="font-heading 2xl:text-4xl xl:text-3xl lg:text-2xl sm:text-base text-sm">9.–11. dubna 2021</p>
       </div>
       <div class="bullets mt-4 flex">
         <div 
           name="left-bullet-btn"
-          class="rounded-full w-4 h-4 mr-2 cursor-pointer"
+          class="rounded-full w-4 h-4 mr-2 cursor-pointer transition-all duration-500"
           :class="{ 'bg-green' : isPoland, 'bg-grey' : !isPoland }"
           @click="changeToPoland">
         </div>
         <div 
           name="right-bullet-btn"
-          class="rounded-full w-4 h-4 cursor-pointer"
+          class="rounded-full w-4 h-4 cursor-pointer transition-all duration-500"
           :class="{ 'bg-green' : !isPoland, 'bg-grey' : isPoland }"
           @click="changeToIran">
         </div>
