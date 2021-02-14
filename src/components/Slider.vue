@@ -3,19 +3,20 @@
     <div class="info flex flex-col justify-center relative
         xl:pl-36 xl:pr-28
         lg:pl-20 lg:pr-12
-        px-8 mobile:py-12 py-4 md:w-2/5 w-4/5">
+        px-8 mobile:py-12 py-4 md:w-2/5 w-4/5
+        slider-anim">
       <h2 
-      class="button bg-black text-white font-heading uppercase lg:text-4xl sm:text-2xl text-base lg:pb-4 lg:pt-2 pb-2 pt-1 px-4 text-center align-middle lg:w-48 sm:w-32 w-24 cursor-pointer"
+      class="button bg-black text-white font-heading uppercase lg:text-4xl sm:text-2xl text-base lg:pb-4 lg:pt-2 pb-2 pt-1 px-4 text-center align-middle lg:w-48 sm:w-32 w-24 cursor-pointer slider-anim"
       @click="changeCountry">
         {{ btnText }}
       </h2>
-      <div class="info-text mt-4 sm:text-base text-sm lg:h-20 sm:h-28 mobile:h-32 h-48">
+      <div class="info-text mt-4 sm:text-base text-sm lg:h-20 sm:h-28 mobile:h-32 h-48 slider-anim">
         <p class="xl:text-lg">{{ countryText }}</p>
       </div>
-      <div class="date mt-4 xl:mt-16">
+      <div class="date mt-4 xl:mt-16 slider-anim">
         <p class="font-heading 2xl:text-4xl xl:text-3xl lg:text-2xl sm:text-base text-sm">9.–11. dubna 2021</p>
       </div>
-      <div class="bullets mt-4 flex">
+      <div class="bullets mt-4 flex slider-anim">
         <div 
           name="left-bullet-btn"
           class="rounded-full w-4 h-4 mr-2 cursor-pointer transition-all duration-500"
@@ -29,12 +30,12 @@
           @click="changeToIran">
         </div>
       </div>
-      <div class="w-20 absolute bottom-0 pb-8 md:block hidden">
+      <div class="soc-icons w-20 absolute bottom-0 pb-8 md:block hidden slider-anim">
         <Socials />
       </div>   
     </div>       
-    <div class="img-section md:w-3/5 w-full right-0">
-    <img :src="actualPhoto" :alt="btnText" class="w-full">
+    <div class="img-section slider-img md:w-3/5 w-full right-0 slider-anim">
+      <img :src="actualPhoto" :alt="btnText" class="w-full">
     </div>
   </div>
   <div class="gg-border-style-dashed -mt-2"></div>

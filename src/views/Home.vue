@@ -37,6 +37,10 @@ import Team from '../components/Team.vue'
 import Partners from '../components/Partners.vue'
 import History from '../components/History.vue'
 
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+
 export default {
   name: 'Home',
   components: {
@@ -48,6 +52,33 @@ export default {
     Team,
     Partners,
     History
+  },
+  mounted() {
+    gsap.registerPlugin(ScrollTrigger)
+
+    let sliderTl = gsap.timeline({
+      scrollTrigger: {
+        trigger: '#slider'
+      }
+    })
+
+    let aboutTl = gsap.timeline({
+      scrollTrigger: {
+        trigger: '#about h2'
+      }
+    })
+
+    sliderTl
+      .from(".slider-img", { x: 200, opacity: 0, duration: 1.2 })
+      .from(".info h2", { x: -200, opacity: 0, duration: 1.2 })
+      .from(".info .info-text", { x: -100, opacity: 0, duration: 1.2 })
+      .from(".info .date", { x: -100, opacity: 0, duration: 1.2 })
+      .from(".info .bullets", { opacity: 0, duration: 1.2 })
+      .from(".info .soc-icons", { opacity: 0, duration: 1.2 })
+
+    aboutTl
+      .from("#about h2", { y: 400, opacity: 0, duration: 1.2 })
+      .from("#about article", { opacity: 0, duration: 1.2 })
   }
 }
 </script>
