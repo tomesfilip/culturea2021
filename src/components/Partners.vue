@@ -4,16 +4,17 @@
     <div class="logos grid xl:grid-cols-4 md:grid-cols-3 mobile:grid-cols-2 grid-cols-1 gap-4 items-center justify-items-center">
       <img v-for="(logo, logoName) in logos" :key="logoName" :src="logo.logoImg" :alt="logo.logoName" class="sm:w-full w-1/2">
     </div>
-  </Container>  
+  </Container>
 </template>
 
 <script>
 import Container from './Container.vue'
 
-import dachmediaImg from '../assets/img/partners/dachmedia.png'
-import stamgastImg from '../assets/img/partners/stamgast_gurman.png'
-import vychytaneImg from '../assets/img/partners/vychytane_cz.png'
+import prasadImg from '../assets/img/partners/prasad.png'
+import mkmImg from '../assets/img/partners/mkm.png'
+import totalOutdoorImg from '../assets/img/partners/total_outdoor.png'
 import zlinImg from '../assets/img/partners/zlin_cz.png'
+import winewordsImg from '../assets/img/partners/wine_words.png'
 
 export default {
   components: { Container },
@@ -21,20 +22,24 @@ export default {
     return {
       logos: [
         {
-          logoName: 'dachmedia',
-          logoImg: dachmediaImg
+          logoName: 'Prašád',
+          logoImg: prasadImg
         },
         {
-          logoName: 'Štamgast & Gurmán',
-          logoImg: stamgastImg
+          logoName: 'MKM jazyková škola, překladatelská agentura',
+          logoImg: mkmImg
         },
         {
-          logoName: 'Vychytané',
-          logoImg: vychytaneImg
+          logoName: 'Total Outdoor',
+          logoImg: totalOutdoorImg
         },
         {
           logoName: 'Zlín cz',
           logoImg: zlinImg
+        },
+        {
+          logoName: 'Wine words',
+          logoImg: winewordsImg
         }
       ]
     }

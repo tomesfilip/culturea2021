@@ -29,7 +29,7 @@
               <img v-if=teamMember.photo :src="teamMember.photo" :alt="teamMember.name" class="w-full h-full object-cover">
             </div>
             <figcaption class="member-name h-1/3 bg-green w-full px-2 flex flex-col items-center justify-center text-yellow">
-              <p class="font-bold mobile:text-lg mb-2">{{ teamMember.name }}</p>
+              <p class="font-bold mobile:text-lg mobile:mb-2">{{ teamMember.name }}</p>
               <p class="uppercase mobile:block hidden text-sm 2xl:text-base">{{ teamMember.position }}</p>
             </figcaption>
           </div>

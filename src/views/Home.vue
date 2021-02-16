@@ -21,6 +21,9 @@
     <section id="partners" class="py-12">
       <Partners />
     </section>
+    <section id="medial-partners" class="py-12">
+      <MedialPartners />
+    </section>
     <section id="history" class="py-12">
       <History />
     </section>
@@ -35,6 +38,7 @@ import Program from '../components/Program.vue'
 import MapInfo from '../components/MapInfo.vue'
 import Team from '../components/Team.vue'
 import Partners from '../components/Partners.vue'
+import MedialPartners from '../components/MedialPartners.vue'
 import History from '../components/History.vue'
 
 import { gsap } from 'gsap'
@@ -51,6 +55,7 @@ export default {
     MapInfo,
     Team,
     Partners,
+    MedialPartners,
     History
   },
   mounted() {
@@ -64,21 +69,21 @@ export default {
 
     let aboutTl = gsap.timeline({
       scrollTrigger: {
-        trigger: '#about h2'
+        trigger: '#about'
       }
     })
 
     sliderTl
-      .from(".slider-img", { x: 200, opacity: 0, duration: 1.2 })
-      .from(".info h2", { x: -200, opacity: 0, duration: 1.2 })
-      .from(".info .info-text", { x: -100, opacity: 0, duration: 1.2 })
-      .from(".info .date", { x: -100, opacity: 0, duration: 1.2 })
-      .from(".info .bullets", { opacity: 0, duration: 1.2 })
-      .from(".info .soc-icons", { opacity: 0, duration: 1.2 })
+      .from(".slider-img", { x: 200, opacity: 0, duration: 1 })
+      .from(".info h2", { x: -200, opacity: 0, duration: 1 })
+      .from(".info .info-text", { x: -100, opacity: 0, duration: 1 })
+      .from(".info .date", { x: -100, opacity: 0, duration: 1 })
+      .from(".info .bullets", { opacity: 0, duration: 1 })
+      .from(".info .soc-icons", { opacity: 0, duration: 1 })
 
     aboutTl
-      .from("#about h2", { y: 400, opacity: 0, duration: 1.2 })
-      .from("#about article", { opacity: 0, duration: 1.2 })
+      .from("#about h2", { y: 400, opacity: 0, duration: 1.5 })
+      .from("#about article", { opacity: 0, duration: 1.4 })
   }
 }
 </script>
