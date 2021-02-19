@@ -1,7 +1,7 @@
 <template>
   <div class="about-top mobile:py-24">
     <Container class="text-center lg:w-1/3 md:w-1/2 md:px-0 px-4">
-        <transition appear @before-enter="beforeEnter" @enter="enter" @after-enter="afterEnter">
+        <transition appear @before-enter="beforeEnter" @enter="enter">
           <h2 class="uppercase text-4xl mb-4 ml-4 font-heading">O festivalu</h2>
         </transition>
         <article>
@@ -43,13 +43,11 @@ export default {
     },
 
     beforeEnter(el) {
-      console.log('before enter - set initial state')
       el.style.transform = 'translateY(-60px)'
       el.style.opacity = 0
     },
 
     enter(el, done) {
-      console.log('starting to enter - make trasition')
       gsap.to(el, {
         duration: 1,
         y: 0,
@@ -57,11 +55,6 @@ export default {
         onComplete: done
       })
     },
-
-    afterEnter() {
-      console.log('after enter')
-    }
-
   },
 }
 </script>

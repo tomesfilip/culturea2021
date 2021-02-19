@@ -1,8 +1,13 @@
 <template>
   <Container class="px-6 lg:px-0">
     <div class="bg-lightGrey p-8">
-      <div class="quiz grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 gap-2">
-        <div class="quiz-card bg-white flex flex-col justify-between px-6 pt-4 h-72 sm-mobile:h-80 mobile:h-96 sm:h-80 md:h-96 3xl:h-xl">
+      <transition-group
+        appear
+        tag="div"
+        @before-enter="beforeEnter"
+        @enter="enter"
+        class="quiz grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 gap-2">
+        <div :key=0 class="quiz-card bg-white flex flex-col justify-between px-6 pt-4 h-72 sm-mobile:h-80 mobile:h-96 sm:h-80 md:h-96 3xl:h-xl">
           <p class="uppercase text-lososPink mb-4 text-xl font-bold">Zajímavé fakty</p>
           <h3 class="uppercase xl:text-4xl lg:text-3xl md:text-4xl text-2xl font-heading mb-8 xl:leading-normal">Rychlý kvíz<br>o festivalu culturea</h3>
         </div>
@@ -13,7 +18,7 @@
           class="cursor-pointer select-none h-72 sm-mobile:h-80 mobile:h-96 sm:h-80 md:h-96 3xl:h-xl"
           @click="quizCard.isAnswer = !quizCard.isAnswer"
         />      
-      </div>
+      </transition-group>
     </div> 
   </Container>  
 </template>
@@ -21,6 +26,7 @@
 <script>
 import Container from './Container.vue'
 import QuizCard from './QuizCard.vue'
+import gsap from 'gsap'
 
 import card1Img from '../assets/img/about/cards/card1.png'
 import card2Img from '../assets/img/about/cards/card2.png'
@@ -115,6 +121,22 @@ export default {
           }
         }
       ]
+    }
+  },
+
+  methods: {
+    beforeEnter(el) {
+      el.style.opacity = 0
+      el.style.transform = 'scaleX(0)'
+    },
+
+    enter(el, done) {
+      gsap.to(el, {
+        duration: 0.8,
+        opacity: 1,
+        scaleX: 1,
+        onComplete: done
+      })
     }
   }
 }
