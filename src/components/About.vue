@@ -1,7 +1,9 @@
 <template>
   <div class="about-top mobile:py-24">
     <Container class="text-center lg:w-1/3 md:w-1/2 md:px-0 px-4">
-        <h2 class="uppercase text-4xl mb-4 ml-4 font-heading">O festivalu</h2>
+        <transition appear @before-enter="beforeEnter" @enter="enter" @after-enter="afterEnter">
+          <h2 class="uppercase text-4xl mb-4 ml-4 font-heading">O festivalu</h2>
+        </transition>
         <article>
           <p class="mb-4">Culturea je cestovatelský projekt, který každoročně pořádají studenti Fakulty multimediálních komunikací<br>Univerzity Tomáše Bati ve Zlíně.</p>
           <p class="mb-2">Culturea je festival o dvou zemích, kde se představí to nejlepší z nich. Místní delikatesy, národní tradice, zvyky - zkrátka vše, čím je země výjimečná.</p>
@@ -25,6 +27,7 @@
 import Container from './Container.vue'
 import Quiz from './Quiz.vue'
 
+import gsap from 'gsap'
 
 export default {
   components: { Container, Quiz },
@@ -38,7 +41,28 @@ export default {
       const section = document.getElementById('history')
       section.scrollIntoView({ behavior: 'smooth' })
     },
-  }  
+
+    beforeEnter(el) {
+      console.log('before enter - set initial state')
+      el.style.transform = 'translateY(-60px)'
+      el.style.opacity = 0
+    },
+
+    enter(el, done) {
+      console.log('starting to enter - make trasition')
+      gsap.to(el, {
+        duration: 1,
+        y: 0,
+        opacity: 1,
+        onComplete: done
+      })
+    },
+
+    afterEnter() {
+      console.log('after enter')
+    }
+
+  },
 }
 </script>
 

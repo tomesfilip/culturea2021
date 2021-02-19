@@ -1,8 +1,10 @@
 <template>
   <Nav />
-  <transition name="fade">
-    <router-view />
-  </transition>
+    <router-view v-slot="{ Component }">
+      <transition name="route" mode="out-in">
+        <component :is="Component"></component>
+      </transition>
+    </router-view>
   <section id="organizer" class="py-12">
     <Organizer />
   </section>
@@ -60,15 +62,15 @@ export default {
   }
 }
 
-.fade-enter-active, .fade-leave-active {
+.route-enter-active, .route-leave-active {
   transition: all .6s ease;
 }
 
-.fade-enter-active {
+.route-enter-active {
   transition-delay: .6s;
 }
 
-.fade-enter, .fade-leave-active {
+.route-enter-from, .route-leave-active {
   opacity: 0;
   transform: translateX(-100%);
 }
