@@ -1,7 +1,9 @@
 <template>
-  <PressKit class="py-8" />
-  <ToDownload class="py-8" />
-  <ContactJournalist class="py-8" />
+  <div class="pro-media">
+    <PressKit class="py-8" />
+    <ToDownload class="py-8" />
+    <ContactJournalist class="py-8" />
+  </div>
 </template>
 
 <script>
