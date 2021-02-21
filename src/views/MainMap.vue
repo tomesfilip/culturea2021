@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import Mapbox from '../components/Mapbox.vue'
+import Mapbox from '../components/map/Mapbox.vue'
 
 export default {
   components: { Mapbox }

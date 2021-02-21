@@ -6,7 +6,7 @@
 <script>
 import mapboxgl from 'mapbox-gl'
 import "leaflet/dist/leaflet.css"
-import L from "leaflet"
+// import L from "leaflet"
 
 export default {
   name: "BaseMap",
@@ -25,7 +25,7 @@ export default {
 
       this.map = new mapboxgl.Map({
         container: "mapContainer",
-        style: "mapbox://styles/f-tomes/ckkb87n7u0nq917nyabyybt4l",
+        style: "mapbox://styles/f-tomes/ckl27l6x413dx17mvv50wti7j",
         center: [17.674, 49.225],
         zoom: 13,
         minZoom: 13,

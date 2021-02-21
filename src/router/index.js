@@ -7,17 +7,17 @@ import NotFound from '../views/NotFound.vue'
 // for production add 2021/ to all paths
 const routes = [
   {
-    path: '/2021/',
+    path: '/',
     name: 'Home',
     component: Home
   },
   {
-    path: '/2021/map',
+    path: '/map',
     name: 'MainMap',
     component: MainMap
   },
   {
-    path: '/2021/pro-media',
+    path: '/pro-media',
     name: 'ProMedia',
     component: ProMedia
   },

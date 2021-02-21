@@ -1,49 +1,33 @@
 <template>
-  <Nav />
-    <router-view v-slot="{ Component }">
-      <transition name="route" mode="out-in">
-        <component :is="Component"></component>
-      </transition>
-    </router-view>
-  <section id="organizer" class="py-12">
-    <Organizer />
-  </section>
-  <section id="contact">
-    <Contact />   
-  </section>
-  <Footer />
+    <Nav v-if="!['MainMap'].includes($route.name)" />
+      <router-view v-slot="{ Component }">
+        <transition name="route" mode="out-in">
+          <component :is="Component"></component>
+        </transition>
+      </router-view>
+    <section v-if="!['MainMap'].includes($route.name)" id="organizer" class="py-12">
+      <Organizer />
+    </section>
+    <section v-if="!['MainMap'].includes($route.name)" id="contact">
+      <Contact />   
+    </section>
+    <Footer v-if="!['MainMap'].includes($route.name)" />
 </template>
 
 <script>
 import Nav from './components/Nav.vue'
-import NavItem from './components/NavItem.vue'
-import Slider from './components/Slider.vue'
-import About from './components/About.vue'
-import VisitUsOnline from './components/VisitUsOnline.vue'
-import Program from './components/Program.vue'
-import Team from './components/Team.vue'
-import Partners from './components/Partners.vue'
-import History from './components/History.vue'
 import Organizer from './components/Organizer.vue'
 import Contact from './components/Contact.vue'
-import Form from './components/Form.vue'
 import Footer from './components/Footer.vue'
+import MainMap from './views/MainMap.vue'
 
 export default {
   components: {
     Nav,
-    NavItem,
-    Slider,
-    About,
-    VisitUsOnline,
-    Program,
-    Team,
-    Partners,
-    History,
     Organizer,
     Contact,
-    Form,
-    Footer
+    Footer,
+    MainMap
   }
 }
 </script>
