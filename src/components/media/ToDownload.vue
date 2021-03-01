@@ -18,13 +18,13 @@ export default {
         {
           img: 'media/file.svg',
           alt: 'soubor',
-          link: 'https://drive.google.com/drive/folders/1_Mu4mJAp8HWMeNE2erVig-sBewiM7_6d?usp=sharing',
+          link: 'https://drive.google.com/drive/folders/1CsFMpzzpZ67iciQKq_SUgXK8Dkr4B2-Y?fbclid=IwAR1Oj4UYKH0inIgxqjQAN6waunD13pjeADVLF2fK0lu01YbzmWAAlCpSZJg',
           text: 'Tiskové zprávy'
         },
         {
           img: 'media/picture.svg',
           alt: 'obrázek',
-          link: 'https://wetransfer.com/downloads/b5bb8ddb680358938b6af4212ac766ad20210205212759/97c8e7',
+          link: 'https://drive.google.com/drive/folders/1CsFMpzzpZ67iciQKq_SUgXK8Dkr4B2-Y?fbclid=IwAR1Oj4UYKH0inIgxqjQAN6waunD13pjeADVLF2fK0lu01YbzmWAAlCpSZJg',
           text: 'Fotografie ke stažení'
         },
         {
@@ -38,7 +38,3 @@ export default {
   }
 }
 </script>
-
-<style>
-
-</style>

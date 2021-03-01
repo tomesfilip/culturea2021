@@ -96,7 +96,7 @@ export default {
           isAnswer: false,
           answer: {
             isBig: true,
-            titleOne: '7'
+            titleOne: '9'
           }
         },
         {

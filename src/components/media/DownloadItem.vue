@@ -13,7 +13,3 @@ export default {
   props: ['downloadItem'],
 }
 </script>
-
-<style>
-
-</style>

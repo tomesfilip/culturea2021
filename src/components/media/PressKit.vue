@@ -11,7 +11,3 @@ export default {
   components: { Container }
 }
 </script>
-
-<style>
-
-</style>

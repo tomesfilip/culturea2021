@@ -16,6 +16,7 @@ import zlinImg from '../../assets/img/partners/normal-partners/zlin_cz.png'
 import mkmImg from '../../assets/img/partners/normal-partners/mkm.png'
 import prabosBeReadyImg from '../../assets/img/partners/normal-partners/prabos_be_ready.png'
 import wineWordsImg from '../../assets/img/partners/normal-partners/wine_words.png'
+import hostImg from '../../assets/img/partners/normal-partners/host.png'
 
 export default {
   components: { Container },
@@ -35,16 +36,20 @@ export default {
           logoImg: zlinImg
         },
         {
-          logoName: 'Zlín cz',
-          logoImg: mkmImg
-        },
-        {
           logoName: 'Prabos be ready',
           logoImg: prabosBeReadyImg
         },
         {
+          logoName: 'MKM',
+          logoImg: mkmImg
+        },        
+        {
           logoName: 'Winewords',
           logoImg: wineWordsImg
+        },
+        {
+          logoName: 'Host',
+          logoImg: hostImg
         }
       ]
     }

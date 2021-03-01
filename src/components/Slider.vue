@@ -6,7 +6,7 @@
         px-8 mobile:py-12 py-4 md:w-2/5 w-4/5
         slider-anim">
         <h2
-        class="button bg-black text-white font-heading uppercase lg:text-4xl sm:text-2xl text-base lg:pb-4 lg:pt-2 pb-2 pt-1 px-4 text-center align-middle lg:w-48 sm:w-32 w-24 cursor-pointer slider-anim"
+        class="button bg-black text-white font-heading uppercase lg:text-4xl sm:text-2xl text-base lg:pb-4 lg:pt-2 pb-2 pt-2 px-4 text-center align-middle lg:w-48 sm:w-32 w-24 cursor-pointer slider-anim"
         @click="changeCountry">
         {{ imageAlt }}
       </h2>      

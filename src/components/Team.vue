@@ -8,7 +8,7 @@
       :gap="5"
       :slide-ratio="1 / 4"
       :touchable=false
-      :dragging-distance="100"
+      :dragging-distance="60"
       :breakpoints="{ 
         820: { visibleSlides: 2, slideMultiple: 2, arrows: false, slideRatio: 0.65, bullets: false, touchable:true },
         1280: { visibleSlides: 3, slideMultiple: 3, arrows: true, slideRatio: 0.4, bullets: true }
