@@ -22,7 +22,7 @@
       </div>
       <span>
         <img 
-          src="../assets/img/arrow.png" 
+          src="../assets/img/arrow.svg" 
           alt="šípka" 
           class="history-arrow w-6 mt-1.5 transition-transform"
           :class="{

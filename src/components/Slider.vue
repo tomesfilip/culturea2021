@@ -40,7 +40,10 @@
       </div>   
     </div>       
     <div class="img-section slider-img md:w-3/5 w-full right-0 slider-anim">
-      <img :src="actualPhoto" :alt="imageAlt" class="w-full">
+      <picture>
+        <source media="(min-width: 720px)" :srcset="actualPhotoDesktop">
+        <img :src="actualPhoto" :alt="imageAlt" class="w-full">
+      </picture>
     </div>
   </div>
   <div class="gg-border-style-dashed -mt-2"></div>
@@ -59,39 +62,34 @@ export default {
     return {
       isPoland: true,
       actualPhoto: null,
+      actualPhotoDesktop: null,
       imageAlt: '',
     }
   },
   methods: {
     changeCountry() {      
       this.isPoland = !this.isPoland
-
-      if (this.checkMobView()) {
-        this.actualPhoto = this.isPoland ? polandMobImg : iranMobImg
-      }
-      else {
-        this.actualPhoto = this.isPoland ? polandImg : iranImg
-      }
-
+      this.actualPhoto = this.isPoland ? polandMobImg : iranMobImg
+      this.actualPhotoDesktop = this.isPoland ? polandImg : iranImg
       this.imageAlt = this.isPoland ? 'polsko' : 'írán'
     },
     changeToPoland() {
       this.isPoland = true
-      this.actualPhoto = this.checkMobView() ? polandMobImg : polandImg
+      this.actualPhoto = polandMobImg
+      this.actualPhotoDesktop =  polandImg
       this.imageAlt = 'polsko'
     },
     changeToIran() {
       this.isPoland = false
-      this.actualPhoto = this.checkMobView() ? iranMobImg : iranImg
+      this.actualPhoto = iranMobImg
+      this.actualPhotoDesktop = iranImg
       this.imageAlt = 'írán'
-    },
-    checkMobView() {
-      return window.innerWidth < 640
     },
   },
   beforeMount() {
     this.imageAlt = 'polsko'
-    this.actualPhoto =  this.checkMobView() ? polandMobImg : polandImg
+    this.actualPhoto = polandMobImg
+    this.actualPhotoDesktop = polandImg
   }
 }
 </script>
