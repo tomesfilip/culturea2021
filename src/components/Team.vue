@@ -26,7 +26,10 @@
         <template v-slot:content>
           <div class="vueperslide__content-wrapper justify-end bg-darkGrey flex">
             <div class="member-photo h-2/3">
-              <img v-if=teamMember.photo :src="teamMember.photo" :alt="teamMember.name" class="w-full h-full object-cover">
+              <picture class="w-full h-full object-cover">
+                <source v-if=teamMember.webpPhoto :srcset="teamMember.webpPhoto" type="image/webp">
+                <img v-if=teamMember.jpgPhoto :src="teamMember.jpgPhoto" :alt="teamMember.name">
+              </picture>
             </div>
             <figcaption class="member-name h-1/3 bg-green w-full px-2 flex flex-col items-center justify-center text-yellow">
               <p class="font-bold mobile:text-lg mobile:mb-2">{{ teamMember.name }}</p>
@@ -41,7 +44,6 @@
 
 <script>
 import Container from './Container.vue'
-import TeamMember from './TeamMember.vue'
 import { VueperSlides, VueperSlide } from 'vueperslides'
 import 'vueperslides/dist/vueperslides.css'
 
@@ -69,188 +71,248 @@ import SH from '../assets/img/team/SH.webp'
 import TB from '../assets/img/team/TB.webp'
 import ZP from '../assets/img/team/ZP.webp'
 
+import AKjpg from '../assets/img/team/AK.jpg'
+import AMjpg from '../assets/img/team/AM.jpg'
+import ATjpg from '../assets/img/team/AT.jpg'
+import AVjpg from '../assets/img/team/AV.jpg'
+import BBjpg from '../assets/img/team/BB.jpg'
+import BFjpg from '../assets/img/team/BF.jpg'
+import BNjpg from '../assets/img/team/BN.jpg'
+import DKjpg from '../assets/img/team/DK.jpg'
+import FTjpg from '../assets/img/team/FT.jpg'
+import KMjpg from '../assets/img/team/KM.jpg'
+import KTjpg from '../assets/img/team/KT.jpg'
+import LBjpg from '../assets/img/team/LB.jpg'
+import LMojpg from '../assets/img/team/LMo.jpg'
+import LNjpg from '../assets/img/team/LN.jpg'
+import MEjpg from '../assets/img/team/ME.jpg'
+import MKjpg from '../assets/img/team/MK.jpg'
+import MTjpg from '../assets/img/team/MT.jpg'
+import PRjpg from '../assets/img/team/PR.jpg'
+import RSjpg from '../assets/img/team/RS.jpg'
+import RVjpg from '../assets/img/team/RV.jpg'
+import SHjpg from '../assets/img/team/SH.jpg'
+import TBjpg from '../assets/img/team/TB.jpg'
+import ZPjpg from '../assets/img/team/ZP.jpg'
+
 export default {
-  components: { TeamMember, Container, VueperSlides, VueperSlide },
+  components: { Container, VueperSlides, VueperSlide },
   data() {
     return {
       teamMembers: [
         {
-          photo: ME,
+          webpPhoto: ME,
+          jpgPhoto: MEjpg,
           name: 'Michaela Eliášová',
           position: 'project manager'
         },
         {
-          photo: LN,
+          webpPhoto: LN,
+          jpgPhoto: LNjpg,
           name: 'Lucia Novotná',
           position: 'project manager'
         },
         {
-          photo: LB,
+          webpPhoto: LB,
+          jpgPhoto: LBjpg,
           name: 'Lukáš Bouška',
           position: 'production manager'
         },         
         {
-          photo: AT,
+          webpPhoto: AT,
+          jpgPhoto: ATjpg,
           name: 'Aneta Tomanová',
           position: 'production'
         },
         {
-          photo: LMo,
+          webpPhoto: LMo,
+          jpgPhoto: LMojpg,
           name: 'Lucie Monsportová',
           position: 'production'
         },
         {
-          photo: AV,
+          webpPhoto: AV,
+          jpgPhoto: AVjpg,
           name: 'Anna Vrbková',
           position: 'production'
         },
         {
-          photo: BF,
+          webpPhoto: BF,
+          jpgPhoto: BFjpg,
           name: 'Bára Fotrová',
           position: 'production'
         },
         {
-          photo: LN,
+          webpPhoto: LN,
+          jpgPhoto: LNjpg,
           name: 'Lucia Novotná',
           position: 'promo manager'
         },
         {
-          photo: BN,
+          webpPhoto: BN,
+          jpgPhoto: BNjpg,
           name: 'Bára Navrátilová',
           position: 'promo'
         },
         {
-          photo: KM,
+          webpPhoto: KM,
+          jpgPhoto: KMjpg,
           name: 'Kristína Mlynárová',
           position: 'promo'
         },
         {
-          photo: MT,
+          webpPhoto: MT,
+          jpgPhoto: MTjpg,
           name: 'Martin Tomiga',
           position: 'PR manager'
         },
         {
-          photo: RV,
+          webpPhoto: RV,
+          jpgPhoto: RVjpg,
           name: 'Radka Vybíralová',
           position: 'PR'
         },
         {
-          photo: AK,
+          webpPhoto: AK,
+          jpgPhoto: AKjpg,
           name: 'Anežka Karvanová',
           position: 'PR'
         },
         {
-          photo: AM,
+          webpPhoto: AM,
+          jpgPhoto: AMjpg,
           name: 'Anna Marenčáková',
           position: 'PR'
         },
         {
-          photo: BB,
+          webpPhoto: BB,
+          jpgPhoto: BBjpg,
           name: 'Barbora Březíková',
           position: 'fundraising manager'
         },
         {
-          photo: '',
+          webpPhoto: '',
+          jpgPhoto: '',
           name: 'Vojtěch Vaník',
           position: 'fundraising'
         },
         {
-          photo: RS,
+          webpPhoto: RS,
+          jpgPhoto: RSjpg,
           name: 'Rastislav Škojec',
           position: 'fundraising'
         },        
         {
-          photo: SH,
+          webpPhoto: SH,
+          jpgPhoto: SHjpg,
           name: 'Simona Hazuchová',
           position: 'fundraising'
         },
         {
-          photo: '',
+          webpPhoto: '',
+          jpgPhoto: '',
           name: 'Veronika Ištvánková',
           position: 'fundraising'
         },
         {
-          photo: '',
+          webpPhoto: '',
+          jpgPhoto: '',
           name: 'Jan Vilímek',
           position: 'fundraising'
         },
         {
-          photo: TB,
+          webpPhoto: TB,
+          jpgPhoto: TBjpg,
           name: 'Tereza Brlicová',
           position: 'art manager'
         },
         {
-          photo: '',
+          webpPhoto: '',
+          jpgPhoto: '',
           name: 'Lucia Mišeková',
           position: 'art'
         },
         {
-          photo: ZP,
+          webpPhoto: ZP,
+          jpgPhoto: ZPjpg,
           name: 'Zuzana Pevná',
           position: 'art'
         },
         {
-          photo: KT,
+          webpPhoto: KT,
+          jpgPhoto: KTjpg,
           name: 'Kateřina Turková',
           position: 'art'
         },
         {
-          photo: '',
+          webpPhoto: '',
+          jpgPhoto: '',
           name: 'Jan Gajdoš',
           position: 'art'
         },
         {
-          photo: DK,
+          webpPhoto: DK,
+          jpgPhoto: DKjpg,
           name: 'Daniela Kačeriaková',
           position: 'art'
         },        
         {
-          photo: PR,
+          webpPhoto: PR,
+          jpgPhoto: PRjpg,
           name: 'Polina Rodionova',
           position: 'art'
         },
         {
-          photo: '',
+          webpPhoto: '',
+          jpgPhoto: '',
           name: 'Anna Holasová',
           position: 'art'
         },
         {
-          photo: '',
+          webpPhoto: '',
+          jpgPhoto: '',
           name: 'Valéria Balážová',
           position: 'art'
         },
         {
-          photo: FT,
+          webpPhoto: FT,
+          jpgPhoto: FTjpg,
           name: 'Filip Tomeš',
           position: 'art'
         },
         {
-          photo: '',
+          webpPhoto: '',
+          jpgPhoto: '',
           name: 'Branislav Kern',
           position: 'video spot manager'
         },
         {
-          photo: '',
+          webpPhoto: '',
+          jpgPhoto: '',
           name: 'Vendula Kopečná',
           position: 'video spot'
         },
         {
-          photo: '',
+          webpPhoto: '',
+          jpgPhoto: '',
           name: 'Adam Faltus',
           position: 'video spot'
         },
         {
-          photo: '',
+          webpPhoto: '',
+          jpgPhoto: '',
           name: 'Vincent Stránský',
           position: 'video spot'
         },
         {
-          photo: MK,
+          webpPhoto: MK,
+          jpgPhoto: MKjpg,
           name: 'Michal Kuthan',
           position: 'video spot'
         },
         {
-          photo: '',
+          webpPhoto: '',
+          jpgPhoto: '',
           name: 'Matěj Voch',
           position: 'video spot'
         },

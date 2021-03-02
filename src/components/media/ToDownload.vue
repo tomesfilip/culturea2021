@@ -24,7 +24,7 @@ export default {
         {
           img: 'media/picture.svg',
           alt: 'obrázek',
-          link: 'https://drive.google.com/drive/folders/1CsFMpzzpZ67iciQKq_SUgXK8Dkr4B2-Y?fbclid=IwAR1Oj4UYKH0inIgxqjQAN6waunD13pjeADVLF2fK0lu01YbzmWAAlCpSZJg',
+          link: 'https://drive.google.com/drive/folders/17JeguuaSoIMk3G9GbTVa86skFvoA2fVj?fbclid=IwAR0Ka47RiaZD-7ExnYLBinY-U3J_YuIFCuBPVwdvm5aDRSnn_yMC2Uajcis',
           text: 'Fotografie ke stažení'
         },
         {
