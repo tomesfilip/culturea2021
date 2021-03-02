@@ -15,7 +15,10 @@
       </router-link>
     </div>
     <div class="image-part lg:w-3/4 w-3/4">
-      <img src="../assets/img/map-info-img.png" alt="mapa festivalu">
+      <picture>
+        <source srcset="../assets/img/map-info-img-desktop.png" media="(min-width: 768px)">
+        <img src="../assets/img/map-info-img-mob.png" alt="mapa festivalu">
+      </picture>
     </div>
     <router-link :to="{ name: 'Home' }"
       class="lg:hidden text-2xl uppercase items-center text-green font-heading mt-8">
