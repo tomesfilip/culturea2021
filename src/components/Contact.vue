@@ -41,8 +41,7 @@
     <h4 class="font-bold">#letenkunepotrebujes</h4>
   </div>  
   <Form class="lg:order-2 order-1" />
-</div>
-  
+</div>  
 </template>
 
 <script>
