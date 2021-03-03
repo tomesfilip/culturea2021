@@ -3,9 +3,3 @@
     Podpořit festival
   </button>
 </template>
-
-<script>
-</script>
-
-<style>
-</style>

@@ -1,6 +1,6 @@
 <template>
   <div v-if="!quizCard.isAnswer" class="quiz-card flex flex-col overflow-hidden">
-    <img :src="quizCard.img"  :alt="quizCard.alt" class="w-full h-3/4 object-cover">
+    <img :src="quizCard.img"  :alt="quizCard.alt" class="w-full h-3/4 object-cover" width="800" height="607">
     <div class="quiz-card-text text-center h-full flex items-center justify-center bg-black text-white 3xl:px-20 xl:px-12 px-2 sm-mobile:py-8 py-4">
       {{ quizCard.cardText }}
     </div>

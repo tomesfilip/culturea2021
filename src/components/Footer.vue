@@ -10,12 +10,3 @@
     <p class="mt-6 mb-2">© 2021, Všechna práva vyhrazena</p>
   </footer>
 </template>
-
-<script>
-export default {
-
-}
-</script>
-
-<style>
-</style>

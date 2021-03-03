@@ -28,7 +28,7 @@
             <div class="member-photo h-2/3">
               <picture class="w-full h-full object-cover">
                 <source v-if=teamMember.webpPhoto :srcset="teamMember.webpPhoto" type="image/webp">
-                <img v-if=teamMember.jpgPhoto :src="teamMember.jpgPhoto" :alt="teamMember.name">
+                <img v-if=teamMember.jpgPhoto width="400" height="400" :src="teamMember.jpgPhoto" :alt="teamMember.name">
               </picture>
             </div>
             <figcaption class="member-name h-1/3 bg-green w-full px-2 flex flex-col items-center justify-center text-yellow">

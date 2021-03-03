@@ -1,17 +1,20 @@
 @font-face {
   font-family: GalanoGrotesqueBold;
-  src: url('../fonts/Galano\ Grotesque\ Bold.woff');
+  src: url('../fonts/Galano\ Grotesque\ Bold.woff') format('woff');
+  font-display: swap;
   font-weight: 700;
 }
 
 @font-face {
-  font-family: GalanoGrotesqueMedium;
-  src: url('../fonts/Galano\ Grotesque\ Medium.woff');
-  font-weight: 500;
+  font-family: GalanoGrotesqueSemiBold;
+  src: url('../fonts/Galano\ Grotesque\ Semi\ Bold.woff') format('woff');
+  font-display: swap;
+  font-weight: 600;
 }
 
 @font-face {
-  font-family: GalanoGrotesqueSemiBold;
-  src: url('../fonts/Galano\ Grotesque\ Semi\ Bold.woff');
-  font-weight: 600;
+  font-family: GalanoGrotesqueMedium;
+  src: url('../fonts/Galano\ Grotesque\ Medium.woff') format('woff');
+  font-display: swap;
+  font-weight: 500;
 }

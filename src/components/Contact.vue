@@ -2,7 +2,7 @@
 <div class="flex lg:flex-row flex-col mx-auto lg:px-16 px-4 pb-6 pt-20 bg-lightGreen">
   <div class="flex-1 lg:order-1 order-2 md:text-left text-center md:mb-0 mt-12">
     <div class="black-icon md:block hidden mb-12">
-      <img src="../assets/img/icon-black.png" alt="culturea čierne logo">
+      <img src="../assets/img/icon-black.png" alt="culturea čierne logo" width="182" height="109">
     </div>
     <div class="contacts mb-12 grid md:grid-cols-2 grid-cols-1 gap-y-6">
       <div class="contact">
@@ -52,6 +52,3 @@ export default {
   components: { Form }
 }
 </script>
-
-<style>  
-</style>

@@ -31,9 +31,3 @@ export default {
   }
 }
 </script>
-
-<style>
-  .logos .logo {
-
-  }
-</style>

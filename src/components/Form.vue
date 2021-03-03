@@ -24,12 +24,6 @@
   </form>
 </template>
 
-<script>
-export default {
-
-}
-</script>
-
 <style>
   textarea {
     height: 12rem;

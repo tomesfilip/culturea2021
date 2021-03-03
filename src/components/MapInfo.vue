@@ -17,7 +17,7 @@
     <div class="image-part lg:w-3/4 w-3/4">
       <picture>
         <source srcset="../assets/img/map-info-img-desktop.png" media="(min-width: 768px)">
-        <img src="../assets/img/map-info-img-mob.png" alt="mapa festivalu">
+        <img src="../assets/img/map-info-img-mob.png" width="1174" height="783" alt="mapa festivalu">
       </picture>
     </div>
     <router-link :to="{ name: 'Home' }"
@@ -45,6 +45,3 @@ export default {
   }
 }
 </script>
-
-<style>
-</style>
