@@ -10,8 +10,6 @@
     "autoprefixer": "^9.8.6",
     "core-js": "^3.6.5",
     "gsap": "^3.6.0",
-    "leaflet": "^1.7.1",
-    "mapbox-gl": "^2.0.1",
     "postcss": "^7.0.35",
     "scroll-triggers": "^4.4.0",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",

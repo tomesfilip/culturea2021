@@ -1,7 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import ProMedia from '../views/ProMedia.vue'
-import NotFound from '../views/NotFound.vue'
 
 // for production add 2021/ to all paths
 const routes = [
@@ -9,11 +8,6 @@ const routes = [
     path: '/2021/',
     name: 'Home',
     component: Home
-  },
-  {
-    path: '/2021/map',
-    name: 'MainMap',
-    component: () => import('../views/MainMap.vue')
   },
   {
     path: '/2021/pro-media',

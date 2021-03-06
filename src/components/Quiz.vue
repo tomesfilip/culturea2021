@@ -28,13 +28,21 @@ import Container from './Container.vue'
 import QuizCard from './QuizCard.vue'
 import gsap from 'gsap'
 
-import card1Img from '../assets/img/about/cards/card1.png'
-import card2Img from '../assets/img/about/cards/card2.png'
-import card3Img from '../assets/img/about/cards/card3.png'
-import card4Img from '../assets/img/about/cards/card4.png'
-import card5Img from '../assets/img/about/cards/card5.png'
-import card6Img from '../assets/img/about/cards/card6.png'
-import card7Img from '../assets/img/about/cards/card7.png'
+import card1Img from '../assets/img/about/cards/card1.webp'
+import card2Img from '../assets/img/about/cards/card2.webp'
+import card3Img from '../assets/img/about/cards/card3.webp'
+import card4Img from '../assets/img/about/cards/card4.webp'
+import card5Img from '../assets/img/about/cards/card5.webp'
+import card6Img from '../assets/img/about/cards/card6.webp'
+import card7Img from '../assets/img/about/cards/card7.webp'
+
+import card1ImgPng from '../assets/img/about/cards/card1.png'
+import card2ImgPng from '../assets/img/about/cards/card2.png'
+import card3ImgPng from '../assets/img/about/cards/card3.png'
+import card4ImgPng from '../assets/img/about/cards/card4.png'
+import card5ImgPng from '../assets/img/about/cards/card5.png'
+import card6ImgPng from '../assets/img/about/cards/card6.png'
+import card7ImgPng from '../assets/img/about/cards/card7.png'
 
 export default {
   components: { Container, QuizCard },
@@ -44,7 +52,8 @@ export default {
         {
           index: 1,
           cardText: 'Jaké znáte místní delikatesy Polska a Íránu?',
-          img: card1Img,
+          webpImg: card1Img,
+          pngImg: card1ImgPng,
           alt: 'delikatesy Polska a Íránu',
           isAnswer: false,
           answer: {
@@ -57,7 +66,8 @@ export default {
         {
           index: 2,
           cardText: 'Jaké znáte zvyky a tradice?',
-          img: card2Img,
+          webpImg: card2Img,
+          pngImg: card2ImgPng,
           alt: 'zvyky a tradice Polska a Íránu',
           isAnswer: false,
           answer: {
@@ -70,7 +80,8 @@ export default {
         {
           index: 3,
           cardText: 'Jaké země byly minulý rok?',
-          img: card3Img,
+          webpImg: card3Img,
+          pngImg: card3ImgPng,
           alt: 'hory',
           isAnswer: false,
           answer: {
@@ -81,7 +92,8 @@ export default {
         {
           index: 4,
           cardText: 'Co víte o historii našeho festivalu?',
-          img: card4Img,
+          webpImg: card4Img,
+          pngImg: card4ImgPng,
           alt: 'květinový lidový vzor',
           isAnswer: false,
           answer: {
@@ -91,7 +103,8 @@ export default {
         {
           index: 5,
           cardText: 'Kolik let je našemu festivalu?',
-          img: card5Img,
+          webpImg: card5Img,
+          pngImg: card5ImgPng,
           alt: 'koláž',
           isAnswer: false,
           answer: {
@@ -102,7 +115,8 @@ export default {
         {
           index: 6,
           cardText: 'Kde se Culturea konala minulý rok?',
-          img: card6Img,
+          webpImg: card6Img,
+          pngImg: card6ImgPng,
           alt: 'koberec',
           isAnswer: false,
           answer: {
@@ -113,7 +127,8 @@ export default {
         {
           index: 7,
           cardText: 'Letenka?',
-          img: card7Img,
+          webpImg: card7Img,
+          pngImg: card7ImgPng,
           alt: 'letenka',
           isAnswer: false,
           answer: {

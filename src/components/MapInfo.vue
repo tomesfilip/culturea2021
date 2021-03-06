@@ -9,32 +9,31 @@
         K mape
         <span>
           <img src="../assets/img/arrow.png" alt="zelená šipka" 
-              class="ml-2 mt-2 w-3/5 h-auto transition-transform"
+              class="ml-2 w-3/5 h-auto transition-transform"
               :class="{ 'transform translate-x-1.5': arrowHovered }">
         </span>
       </router-link>
     </div>
     <div class="image-part lg:w-3/4 w-3/4">
       <picture>
-        <source srcset="../assets/img/map-info-img-desktop.png" media="(min-width: 768px)">
+        <source srcset="../assets/img/map-info-img-desktop.webp" media="(min-width: 768px)" type="image/webp">
+        <source srcset="../assets/img/map-info-img-desktop.png" media="(min-width: 768px)" type="png">
+        <source srcset="../assets/img/map-info-img-mob.webp" type="image/webp">
         <img src="../assets/img/map-info-img-mob.png" width="1174" height="783" alt="mapa festivalu">
       </picture>
     </div>
-    <router-link :to="{ name: 'Home' }"
-      class="lg:hidden text-2xl uppercase items-center text-green font-heading mt-8">
+    <a href="#" class="lg:hidden text-2xl uppercase items-center text-green font-heading mt-8">
       <div>
         <p class="pb-4">K mapě</p>
         <img src="../assets/img/arrow-down.svg" alt="zelená šipka" 
           class="w-8 mx-auto h-auto animate-bounce">
       </div>        
-      </router-link>
-  </Container>
-    
+    </a>
+  </Container>    
 </template>
 
 <script>
 import Container from './Container.vue'
-
 
 export default {
   components: { Container },

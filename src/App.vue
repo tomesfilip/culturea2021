@@ -1,17 +1,17 @@
 <template>
-    <Nav v-if="!['MainMap'].includes($route.name)" />
+    <Nav />
       <router-view v-slot="{ Component }">
         <transition name="route" mode="out-in">
           <component :is="Component"></component>
         </transition>
       </router-view>
-    <section v-if="!['MainMap'].includes($route.name)" id="organizer" class="py-12">
+    <section id="organizer" class="py-12">
       <Organizer />
     </section>
-    <section v-if="!['MainMap'].includes($route.name)" id="contact">
+    <section id="contact">
       <Contact />   
     </section>
-    <Footer v-if="!['MainMap'].includes($route.name)" />
+    <Footer />
 </template>
 
 <script>
@@ -19,19 +19,16 @@ import Nav from './components/Nav.vue'
 import Organizer from './components/Organizer.vue'
 import Contact from './components/Contact.vue'
 import Footer from './components/Footer.vue'
-import MainMap from './views/MainMap.vue'
 
 export default {
   components: {
     Nav,
     Organizer,
     Contact,
-    Footer,
-    MainMap
+    Footer
   }
 }
 </script>
-
 
 <style>
 #app {

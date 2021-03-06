@@ -14,6 +14,3 @@ export default {
   components: { PressKit, ContactJournalist, ToDownload }
 }
 </script>
-
-<style>
-</style>

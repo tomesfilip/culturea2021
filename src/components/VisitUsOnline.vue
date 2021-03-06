@@ -15,7 +15,3 @@ export default {
   components: { SupportBtn, Container }
 }
 </script>
-
-<style>
-
-</style>
