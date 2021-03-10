@@ -4,13 +4,11 @@
     <div class="gg-border-style-dashed"></div>
     <div
       class="history-items md:text-left text-center"
-      :class="{ showed: showedAll }"
-    >
+      :class="{ showed: showedAll }">
       <History-item 
         v-for="(historyItem, index) in historyItems" 
         :historyItem="historyItem" 
-        :key="index" 
-      />
+        :key="index" />
     </div>
     <button 
       class="text-center w-24 mt-8 font-bold inline-flex items-center justify-center text-green text-lg focus:outline-none"
@@ -24,12 +22,11 @@
         <img 
           src="../assets/img/arrow.svg" 
           alt="šípka" 
-          class="history-arrow w-6 mt-1.5 transition-transform"
+          class="history-arrow w-6 transition-transform"
           :class="{
                     'transform md:rotate-180 -rotate-90': showedAll, 
                     'transform md:rotate-0 rotate-90': !showedAll ,
-                    'transform translate-x-1.5': arrowHovered
-                  }"  
+                    'transform translate-x-1.5': arrowHovered }"
         >          
       </span>
     </button>

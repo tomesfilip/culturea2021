@@ -14,7 +14,7 @@
           @mouseover="arrowHovered = true" @mouseleave="arrowHovered = false">
           Historie festivalu
           <span>
-            <img src="../assets/img/arrow.png" alt="šipka" class="w-6 mt-0.5 ml-2 transition-transform"
+            <img src="../assets/img/arrow.png" alt="šipka" class="w-6 ml-2 transition-transform"
             :class="{ 'transform translate-x-1.5': arrowHovered }">
           </span>
         </button>

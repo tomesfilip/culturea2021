@@ -1,5 +1,5 @@
 <template>
-  <h3 class="uppercase text-4xl mb-8 text-center font-heading">Generální Partner</h3>
+  <h3 class="uppercase text-4xl mb-8 text-center font-heading">Partneři jarního kina</h3>
   <Container class="lg:px-16 px-4">
     <div class="logos flex flex-wrap items-center justify-center">
       <picture v-for="(logo, logoName) in logos" :key="logoName" class="logo lg:w-2/5 mobile:w-2/3">
@@ -13,8 +13,8 @@
 <script>
 import Container from '../Container.vue'
 
-import priaImg from '@/assets/img/partners/general-partners/pria.png'
-import priaImgMob from '@/assets/img/partners/general-partners/priaMob.png'
+import polskyInstitut from '@/assets/img/partners/spring-cinema-partners/pi_praha.png'
+import polskyInstitutImg from '@/assets/img/partners/spring-cinema-partners/pi_prahaMob.png'
 
 export default {
   components: { Container },
@@ -22,14 +22,10 @@ export default {
     return {
       logos: [
         {
-          logoName: 'Pria',
-          logoImg: priaImg,
-          logoImgMob: priaImgMob
+          logoName: 'Polský Institut Praha',
+          logoImg: polskyInstitut,
+          logoImgMob: polskyInstitutImg
         },
-        // {
-        //   logoName: 'Velvyslanectvo PL',
-        //   logoImg: velvyslanectvoPLImg
-        // }
       ]
     }
   }

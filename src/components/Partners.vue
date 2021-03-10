@@ -11,6 +11,9 @@
   <section id="medial-partners" class="py-12 px-4">
     <MedialPartners />
   </section>
+  <section id="cinema-partners" class="py-12 px-4">
+    <CinemaPartners />
+  </section>
 </template>
 
 <script>
@@ -19,8 +22,9 @@ import GeneralPartners from './partners/GeneralPartners.vue'
 import MainPartners from './partners/MainPartners.vue'
 import NormalPartners from './partners/NormalPartners.vue'
 import MedialPartners from './partners/MedialPartners.vue'
+import CinemaPartners from './partners/CinemaPartners.vue'
 
 export default {
-  components: { Container, GeneralPartners, MainPartners, NormalPartners, MedialPartners },
+  components: { Container, GeneralPartners, MainPartners, NormalPartners, MedialPartners, CinemaPartners },
 }
 </script>

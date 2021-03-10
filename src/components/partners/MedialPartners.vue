@@ -13,12 +13,12 @@
 <script>
 import Container from '../Container.vue'
 
-import dachmediaImg from '../../assets/img/partners/medial-partners/dachmedia.png'
-import stamgastImg from '../../assets/img/partners/medial-partners/stamgast_gurman.png'
-import vychytaneImg from '../../assets/img/partners/medial-partners/vychytane_cz.png'
-import dachmediaImgMob from '../../assets/img/partners/medial-partners/dachmediaMob.png'
-import stamgastImgMob from '../../assets/img/partners/medial-partners/stamgast_gurmanMob.png'
-import vychytaneImgMob from '../../assets/img/partners/medial-partners/vychytane_czMob.png'
+import dachmediaImg from '@/assets/img/partners/medial-partners/dachmedia.png'
+import stamgastImg from '@/assets/img/partners/medial-partners/stamgast_gurman.png'
+import vychytaneImg from '@/assets/img/partners/medial-partners/vychytane_cz.png'
+import dachmediaImgMob from '@/assets/img/partners/medial-partners/dachmediaMob.png'
+import stamgastImgMob from '@/assets/img/partners/medial-partners/stamgast_gurmanMob.png'
+import vychytaneImgMob from '@/assets/img/partners/medial-partners/vychytane_czMob.png'
 
 
 export default {

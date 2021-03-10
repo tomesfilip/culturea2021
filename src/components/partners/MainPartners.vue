@@ -13,10 +13,10 @@
 <script>
 import Container from '../Container.vue'
 
-import isProdukceImg from '../../assets/img/partners/main-partners/is_produkce.png'
-import prasadImg from '../../assets/img/partners/main-partners/prasad.png'
-import isProdukceImgMob from '../../assets/img/partners/main-partners/is_produkceMob.png'
-import prasadImgMob from '../../assets/img/partners/main-partners/prasadMob.png'
+import isProdukceImg from '@/assets/img/partners/main-partners/is_produkce.png'
+import prasadImg from '@/assets/img/partners/main-partners/prasad.png'
+import isProdukceImgMob from '@/assets/img/partners/main-partners/is_produkceMob.png'
+import prasadImgMob from '@/assets/img/partners/main-partners/prasadMob.png'
 
 export default {
   components: { Container },
