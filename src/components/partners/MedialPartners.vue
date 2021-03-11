@@ -19,6 +19,8 @@ import vychytaneImg from '@/assets/img/partners/medial-partners/vychytane_cz.png
 import dachmediaImgMob from '@/assets/img/partners/medial-partners/dachmediaMob.png'
 import stamgastImgMob from '@/assets/img/partners/medial-partners/stamgast_gurmanMob.png'
 import vychytaneImgMob from '@/assets/img/partners/medial-partners/vychytane_czMob.png'
+import hsImg from '@/assets/img/partners/medial-partners/hs.png'
+import hsImgMob from '@/assets/img/partners/medial-partners/hsMob.png'
 
 
 export default {
@@ -40,6 +42,11 @@ export default {
           logoName: 'Vychytané',
           logoImg: vychytaneImg,
           logoImgMob: vychytaneImgMob
+        },
+        {
+          logoName: 'Hedvábná Stezka',
+          logoImg: hsImg,
+          logoImgMob: hsImgMob
         }
       ]
     }

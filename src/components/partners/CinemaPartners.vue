@@ -15,6 +15,8 @@ import Container from '../Container.vue'
 
 import polskyInstitut from '@/assets/img/partners/spring-cinema-partners/pi_praha.png'
 import polskyInstitutImg from '@/assets/img/partners/spring-cinema-partners/pi_prahaMob.png'
+import plAmbasadaImg from '@/assets/img/partners/spring-cinema-partners/PL_ambasada.png'
+import plAmbasadaImgMob from '@/assets/img/partners/spring-cinema-partners/PL_ambasadaMob.png'
 
 export default {
   components: { Container },
@@ -25,6 +27,11 @@ export default {
           logoName: 'Polský Institut Praha',
           logoImg: polskyInstitut,
           logoImgMob: polskyInstitutImg
+        },
+        {
+          logoName: 'Polská ambasáda',
+          logoImg: plAmbasadaImg,
+          logoImgMob: plAmbasadaImgMob
         },
       ]
     }
