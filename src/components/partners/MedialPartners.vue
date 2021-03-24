@@ -19,8 +19,12 @@ import vychytaneImg from '@/assets/img/partners/medial-partners/vychytane_cz.png
 import dachmediaImgMob from '@/assets/img/partners/medial-partners/dachmediaMob.png'
 import stamgastImgMob from '@/assets/img/partners/medial-partners/stamgast_gurmanMob.png'
 import vychytaneImgMob from '@/assets/img/partners/medial-partners/vychytane_czMob.png'
-import hsImg from '@/assets/img/partners/medial-partners/hs.png'
-import hsImgMob from '@/assets/img/partners/medial-partners/hsMob.png'
+import hsImg from '@/assets/img/partners/medial-partners/hs.jpg'
+import hsImgMob from '@/assets/img/partners/medial-partners/hsMob.jpg'
+import zlinskoLuhacoviskoImg from '@/assets/img/partners/medial-partners/ZlinskoLuhacovisko.png'
+import zlinskoLuhacoviskoImgMob from '@/assets/img/partners/medial-partners/ZlinskoLuhacoviskoMob.png'
+import PrimaZoomImg from '@/assets/img/partners/medial-partners/PrimaZoom.png'
+import PrimaZoomImgMob from '@/assets/img/partners/medial-partners/PrimaZoomMob.png'
 
 
 export default {
@@ -47,6 +51,16 @@ export default {
           logoName: 'Hedvábná Stezka',
           logoImg: hsImg,
           logoImgMob: hsImgMob
+        },
+        {
+          logoName: 'Zlínsko a Luhačovisko',
+          logoImg: zlinskoLuhacoviskoImg,
+          logoImgMob: zlinskoLuhacoviskoImgMob
+        },
+        {
+          logoName: 'Prima ZOOM',
+          logoImg: PrimaZoomImg,
+          logoImgMob: PrimaZoomImgMob
         }
       ]
     }

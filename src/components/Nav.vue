@@ -146,7 +146,7 @@ export default {
   #menu.active {
     visibility: visible;
     z-index: 2;
-    transform: translateY(0);
+    transform: translateY(-40px);
   }
 }
 
