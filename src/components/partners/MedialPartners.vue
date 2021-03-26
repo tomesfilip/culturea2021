@@ -16,6 +16,7 @@ import vychytaneImg from '@/assets/img/partners/medial-partners/vychytane_cz.png
 import hsImg from '@/assets/img/partners/medial-partners/hs.png'
 import zlinskoLuhacoviskoImg from '@/assets/img/partners/medial-partners/ZlinskoLuhacovisko.png'
 import PrimaZoomImg from '@/assets/img/partners/medial-partners/PrimaZoom.png'
+import vsesvetImg from '@/assets/img/partners/medial-partners/vsesvet.png'
 
 
 export default {
@@ -46,6 +47,10 @@ export default {
         {
           logoName: 'Vychytané',
           logoImg: vychytaneImg
+        },
+        {
+          logoName: 'Všesvet',
+          logoImg: vsesvetImg
         }
       ]
     }
