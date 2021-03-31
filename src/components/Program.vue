@@ -1,35 +1,19 @@
 <template>
   <h2 class="uppercase text-4xl mb-12 font-heading">Program</h2>
   <div class="program-items-wrapper">
-    <div v-for="(programItem, id) in programItems" :key="id" class="active-program-item">
-      <div v-if="programItem.isPrepared" class="program-item mb-8 lg:mb-14 px-4 sm:px-0 sm:w-1/2 2xl:w-2/5 mx-auto">
-        <p class="font-heading text-lg mb-3">{{ programItem.headline }}</p>
-        <p class="mb-2">{{ programItem.text }}</p>
-        <div v-if="programItem.filmList" class="film-list mb-2">
-          <p class="mb-1 font-bold">Výběr filmů:</p>
-          <ul>
-            <li v-for="film in programItem.filmList" :key="film">
-              {{ film }}
-            </li>
-          </ul>
-        </div>
-        <div class="icons w-1/2 lg:w-1/4 mx-auto flex justify-around mt-6 mb-4">
-          <img v-for="icon in programItem.icons" :key="icon" :src="icon" alt="zrak sluch ikona" class="w-10 h-auto">
-        </div>
-        <p class="font-bold mb-2">{{ programItem.date }}</p>
-        <a class="font-bold mb-2" :href="programItem.placeLink">{{ programItem.place }}</a>
-      </div>
-    </div>
-  </div>
-  
+    <ProgramItem v-for="(programItem, id) in programItems" :key="id" :programItem="programItem" />
+  </div>  
   <a href="https://facebook.com/events/s/culturea-2021-cestuj-vsemi-smy/708636869810468/" class="text-green font-bold md:text-lg">Pro nejaktuálnější info navštivte náš Facebook</a>
   <div class="gg-border-style-dashed mt-12"></div>
 </template>
 <script>
+import ProgramItem from './ProgramItem.vue'
+
 import eyeIcon from '@/assets/img/icons/eyeIcon.svg'
 import earIcon from '@/assets/img/icons/earIcon.svg'
 
 export default {
+  components: { ProgramItem },
   data() {
     return {
       programItems: [
@@ -51,7 +35,7 @@ export default {
           date: '9. 4. (pátek) o 19:00',
           place: 'ZOOM',
           placeLink: 'https://fb.me/e/HccoJZm1',
-          isPrepared: false
+          isPrepared: true
         },
         {
           id: 3,
@@ -61,7 +45,7 @@ export default {
           date: '10. 4. (sobota) o 14:00',
           place: 'ZOOM',
           placeLink: 'https://fb.me/e/HccoJZm1',
-          isPrepared: false
+          isPrepared: true
         },
         {
           id: 4,
@@ -75,6 +59,16 @@ export default {
         },
         {
           id: 5,
+          headline: 'Rozhovor - Jak vidí naše sousedy polonista Pavel Trojan',
+          text: 'Odborník na Polsko.  Od historie přes jazyk až po jídlo... Prostě na kulturu. I když se může zdát, že vedle našich hranic není co objevovat, sám Pavel o Polsku mluví jako o "zcela odlišném národě jako je ten náš".',
+          icons: [eyeIcon, earIcon],
+          date: '10. 4. (sobota) o 17:00',
+          place: 'ZOOM',
+          placeLink: 'https://fb.me/e/HccoJZm1',
+          isPrepared: true
+        },
+        {
+          id: 6,
           headline: 'Jarní online kino',
           text: 'Filmy z prostředí Íránu a Polska, tvořené profesionály i talentovanými studentmi. Objednejte si tradiční jídlo z Prašadu, připravte domácí kino a přeneste se s námi za hranice.',
           filmList: [
@@ -92,7 +86,7 @@ export default {
           isPrepared: true
         },
         {
-          id: 6,
+          id: 7,
           headline: 'Virtuálna 3D výstava',
           text: 'Virtuální výstava v níž se dá chodit? Přesně tak. Ve vašem počítači se projdete mezi sochami od íránského umělce Majid Haghighi a grafickými díly od poláka Sebastiána Kubicu.',
           icons: [eyeIcon],
