@@ -1,19 +1,25 @@
 <template>
   <h2 class="uppercase text-4xl mb-12 font-heading">Program</h2>
-  <div class="program-items-wrapper">
+  <div class="program-items-wrapper mb-14">
     <ProgramItem v-for="(programItem, id) in programItems" :key="id" :programItem="programItem" />
-  </div>  
+  </div>
+  <h3 class="text-3xl font-heading mb-8">Výstavy</h3>
+    <div class="expo-items-wrapper">
+      <ExpoItem v-for="(expoItem, id) in expoItems" :key="id" :expoItem="expoItem" />
+    </div>  
   <a href="https://facebook.com/events/s/culturea-2021-cestuj-vsemi-smy/708636869810468/" class="text-green font-bold md:text-lg">Pro nejaktuálnější info navštivte náš Facebook</a>
   <div class="gg-border-style-dashed mt-12"></div>
 </template>
 <script>
 import ProgramItem from './ProgramItem.vue'
+import ExpoItem from './ExpoItem.vue'
 
 import eyeIcon from '@/assets/img/icons/eyeIcon.svg'
 import earIcon from '@/assets/img/icons/earIcon.svg'
+import handIcon from '@/assets/img/icons/handIcon.svg'
 
 export default {
-  components: { ProgramItem },
+  components: { ProgramItem, ExpoItem },
   data() {
     return {
       programItems: [
@@ -94,8 +100,69 @@ export default {
           place: 'ArtSteps',
           placeLink: 'https://fb.me/e/HccoJZm1',
           isPrepared: false
+        },        
+      ],
+      expoItems: [
+        {
+          id: 1,
+          headline: 'Culturea menu v Prašade',
+          text: 'Navařit si íránské jídlo je bez potřebných surovin celkem výzva.  Šafrán nebo bryndza  pravděpodobně není běžnou součástí vaší spíže.  Naštěstí vám to s láskou připraví v Prašádu a vaše kuchyň tak zůstane čistá.  Rovněž si můžete objednat i polské speciality! Všechny verze jídel jsou vegetariánské. Jídla budou v nabídce pouze během festivalu.',
+          icons: [eyeIcon, earIcon, handIcon],
+          date: '9. - 11. 4. (pátek, sobota, neděle)',
+          place: 'Restaurace Prašád',
+          placeLink: 'https://goo.gl/maps/ktUk7uDhVKjV5SiB8',
+          isPrepared: true
         },
-        
+        {
+          id: 2,
+          headline: 'Výstava za okny - polský grafický dizajnér',
+          text: '',
+          icons: [eyeIcon],
+          date: '9. - 11. 4. (pátek, sobota, neděle)',
+          place: 'Kongresové centrum',
+          placeLink: 'https://goo.gl/maps/pgJAeFvJnSwVa8Pe9',
+          isPrepared: false
+        },
+        {
+          id: 3,
+          headline: 'Instalace uměleckých děl - íránský sochár',
+          text: '',
+          icons: [eyeIcon],
+          date: '9. - 11. 4. (pátek, sobota, neděle)',
+          place: 'Klub 204',
+          placeLink: 'https://goo.gl/maps/hKgwewMySFENDzVX7',
+          isPrepared: false
+        },
+        {
+          id: 4,
+          headline: 'Výloha kultury zemí Polska a Íránu - AR realita',
+          text: 'Na první pohled plakát, na pohled přes aplikaci Artivive je to okno do jiné kultury. Které se vám líbí víc - Polsko či Írán?',
+          icons: [eyeIcon],
+          date: '9. - 11. 4. (pátek, sobota, neděle)',
+          place: 'Pekařství Javor na Školní',
+          placeLink: 'https://goo.gl/maps/3hbNzRCCoqLXMCW77',
+          isPrepared: true
+        },
+        {
+          id: 5,
+          headline: 'Íránská vitráž',
+          text: 'Během pití kvalitní kávy si vychutnáte i pohled na smyslovou instalaci z dílny studentů FMK, Univerzity Tomáše Bati. Navíc máte možnost vyhrát lístky od Flixbusu do Polska a zpátky v hodnotě 2 000 CZK. Stačí se vyfotit u této instalace, fotku přidat do příběhu na Instagram a označit nás tam.',
+          icons: [eyeIcon],
+          date: '9. - 11. 4. (pátek, sobota, neděle)',
+          place: 'Kafec Zlínský',
+          placeLink: 'https://goo.gl/maps/M14AveaDBYDkLHJ99',
+          isPrepared: true
+        },
+        {
+          id: 6,
+          headline: 'Hra se slovy',
+          text: '',
+          icons: [eyeIcon],
+          date: '9. - 11. 4. (pátek, sobota, neděle)',
+          place: 'Jedním tahem',
+          placeLink: 'https://goo.gl/maps/KmPyDUsKCDGbg9797',
+          isPrepared: false
+        },
       ]
     }
   }
