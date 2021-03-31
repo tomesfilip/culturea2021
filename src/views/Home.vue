@@ -9,7 +9,7 @@
     <section id="visit-us-online" class="pt-12 mobile:pb-40 pb-20">
       <VisitUsOnline />
     </section>
-    <section id="program" class="mobile:pt-12 py-16 mobile:mt-8 mobile:pb-24">
+    <section id="program" class="mobile:pt-12 py-16 mobile:mt-8 mobile:pb-24 text-center">
       <Program />
     </section>
     <section id="map-info" class="mobile:pb-24 py-16 mobile:mt-28">
