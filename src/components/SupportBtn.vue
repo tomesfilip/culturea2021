@@ -1,5 +1,6 @@
 <template>
-  <button class="rounded-lg text-white font-bold bg-green px-6 py-2.5 focus:outline-none">
+  <a href="https://goout.net/cs/culturea-2021/szfrjgr/" target="_blank" 
+    class="rounded-lg text-white font-bold bg-green px-6 py-2.5 focus:outline-none cursor-pointer">
     Podpořit festival
-  </button>
+  </a>
 </template>

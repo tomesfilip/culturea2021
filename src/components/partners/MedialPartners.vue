@@ -17,6 +17,7 @@ import hsImg from '@/assets/img/partners/medial-partners/hs.png'
 import zlinskoLuhacoviskoImg from '@/assets/img/partners/medial-partners/ZlinskoLuhacovisko.png'
 import PrimaZoomImg from '@/assets/img/partners/medial-partners/PrimaZoom.png'
 import vsesvetImg from '@/assets/img/partners/medial-partners/vsesvet.png'
+import zlinksyKrajImg from '@/assets/img/partners/medial-partners/zlinsky_kraj.png'
 
 
 export default {
@@ -51,6 +52,10 @@ export default {
         {
           logoName: 'Všesvet',
           logoImg: vsesvetImg
+        },
+        {
+          logoName: 'Zlínský kraj',
+          logoImg: zlinksyKrajImg
         }
       ]
     }

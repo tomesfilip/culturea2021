@@ -6,7 +6,7 @@
       <router-link :to="{ name: 'Home' }" 
         class="lg:inline-flex hidden text-2xl uppercase items-center text-green font-heading"
         @mouseover="arrowHovered = true" @mouseleave="arrowHovered = false">
-        K mape
+        K mapě
         <span>
           <img src="../assets/img/arrow.png" alt="zelená šipka" 
               class="ml-2 w-3/5 h-auto transition-transform"

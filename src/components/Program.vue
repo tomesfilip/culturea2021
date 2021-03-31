@@ -13,7 +13,7 @@
             </li>
           </ul>
         </div>
-        <div class="icons w-1/2 lg:w-1/4 mx-auto flex justify-around mb-2">
+        <div class="icons w-1/2 lg:w-1/4 mx-auto flex justify-around mt-6 mb-4">
           <img v-for="icon in programItem.icons" :key="icon" :src="icon" alt="zrak sluch ikona" class="w-10 h-auto">
         </div>
         <p class="font-bold mb-2">{{ programItem.date }}</p>
