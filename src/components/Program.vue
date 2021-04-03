@@ -145,16 +145,6 @@ export default {
         },
         {
           id: 5,
-          headline: 'Íránská vitráž',
-          text: 'Během pití kvalitní kávy si vychutnáte i pohled na smyslovou instalaci z dílny studentů FMK, Univerzity Tomáše Bati. Navíc máte možnost vyhrát lístky od Flixbusu do Polska a zpátky v hodnotě 2 000 CZK. Stačí se vyfotit u této instalace, fotku přidat do příběhu na Instagram a označit nás tam.',
-          icons: [eyeIcon],
-          date: '9. - 11. 4. (pátek, sobota, neděle)',
-          place: 'Kafec Zlínský',
-          placeLink: 'https://goo.gl/maps/M14AveaDBYDkLHJ99',
-          isPrepared: true
-        },
-        {
-          id: 6,
           headline: 'Hra se slovy',
           text: '',
           icons: [eyeIcon],
