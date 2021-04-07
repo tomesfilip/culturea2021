@@ -12,10 +12,10 @@
         </ul>
       </div>
       <div class="icons w-1/2 lg:w-1/4 mx-auto flex justify-center space-x-6 mt-6 mb-4">
-        <img v-for="icon in programItem.icons" :key="icon" :src="icon" alt="zrak sluch ikona" class="w-10 h-auto">
+        <img v-for="icon in programItem.icons" :key="icon" :src="icon" alt="zrak sluch ikona" class="w-10 h-auto" width="56" height="109">
       </div>
       <p class="font-bold mb-2">{{ programItem.date }}</p>
-      <a class="font-bold mb-2" :href="programItem.placeLink">{{ programItem.place }}</a>
+      <a class="font-bold mb-2" rel="noopener" :href="programItem.placeLink">{{ programItem.place }}</a>
     </div>
   </div>
 </template>

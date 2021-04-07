@@ -9,7 +9,7 @@
       <Organizer />
     </section>
     <section id="contact">
-      <Contact />   
+      <Contacts />   
     </section>
     <Footer />
 </template>
@@ -17,14 +17,14 @@
 <script>
 import Nav from './components/Nav.vue'
 import Organizer from './components/Organizer.vue'
-import Contact from './components/Contact.vue'
+import Contacts from './components/Contacts.vue'
 import Footer from './components/Footer.vue'
 
 export default {
   components: {
     Nav,
     Organizer,
-    Contact,
+    Contacts,
     Footer
   }
 }

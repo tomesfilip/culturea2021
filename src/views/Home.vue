@@ -3,17 +3,17 @@
     <section id="slider" class="mb:pb-32 pb-0">
       <Slider />
     </section>
+    <section id="program" class="mobile:pt-12 py-16 mobile:mt-8 mobile:pb-24 text-center">
+      <Program />
+    </section>
+    <section id="map-info" class="mobile:pb-24 py-16 mobile:mt-8">
+      <MapInfo />
+    </section>
     <section id="about" class="py-12">
       <About />
     </section>
     <section id="visit-us-online" class="pt-12 mobile:pb-40 pb-20">
       <VisitUsOnline />
-    </section>
-    <section id="program" class="mobile:pt-12 py-16 mobile:mt-8 mobile:pb-24 text-center">
-      <Program />
-    </section>
-    <section id="map-info" class="mobile:pb-24 py-16 mobile:mt-28">
-      <MapInfo />
     </section>
     <section id="our-team" class="py-12 bg-grey">
       <Team />

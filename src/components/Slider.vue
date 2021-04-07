@@ -41,8 +41,8 @@
     </div>       
     <div class="img-section slider-img md:w-3/5 w-full right-0 slider-anim">
       <picture>
-        <source media="(min-width: 720px)" :srcset="actualPhotoDesktop">
-        <img :src="actualPhoto" :alt="imageAlt" class="w-full">
+        <source media="(min-width: 720px)" :srcset="actualPhotoDesktop" width="966" height="853">
+        <img :src="actualPhoto" :alt="imageAlt" class="w-full" width="240" height="460">
       </picture>
     </div>
   </div>

@@ -12,6 +12,7 @@ import Container from '../Container.vue'
 
 import polskyInstitutImg from '@/assets/img/partners/spring-cinema-partners/pi_praha.png'
 import plAmbasadaImg from '@/assets/img/partners/spring-cinema-partners/PL_ambasada.png'
+import plSchoolLodzImg from '@/assets/img/partners/spring-cinema-partners/PL_school_Lodz.png'
 
 export default {
   components: { Container },
@@ -25,6 +26,10 @@ export default {
         {
           logoName: 'Polská ambasáda',
           logoImg: plAmbasadaImg,
+        },
+        {
+          logoName: 'Polská filmová škola Lodz',
+          logoImg: plSchoolLodzImg,
         },
       ]
     }

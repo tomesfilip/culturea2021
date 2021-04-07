@@ -7,9 +7,9 @@
         <img v-for="icon in expoItem.icons" :key="icon" :src="icon" alt="zrak sluch ikona" class="w-10 h-auto">
       </div>
       <p class="font-bold mb-2">{{ expoItem.date }}</p>
-      <a :href="expoItem.placeLink" target="_blank"
+      <a :href="expoItem.placeLink" target="_blank" rel="noopener"
         class="expo-place md:w-1/2 mx-auto flex items-center justify-center space-x-4 mt-6 mb-4">
-        <img src="../assets/img/icons/mapPin.svg" alt="značka na mape ikona">
+        <img src="../assets/img/icons/mapPin.svg" alt="značka na mape ikona" width="24" height="30">
         <p class="font-bold">{{ expoItem.place }}</p>
       </a>
     </div>

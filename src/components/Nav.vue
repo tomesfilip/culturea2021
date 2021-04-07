@@ -5,7 +5,7 @@
     <div class="top-menu px-12 lg:px-0 w-full lg:w-auto items-center flex justify-between z-10">
       <div class="logo">
         <router-link :to="{ name: 'Home' }">
-          <img src="../assets/img/logo-green.svg" alt="culturea zelené logo" class="w-auto lg:h-10 h-8">
+          <img src="../assets/img/logo-green.svg" alt="culturea zelené logo" class="w-auto lg:h-10 h-8" width="164" height="46">
         </router-link>
       </div>
       <div 

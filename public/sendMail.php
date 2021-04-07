@@ -42,8 +42,7 @@ if(strlen($fromName) > 0 !== false & strlen($fromEmail) > 0 !== false) {
   } else {
     echo 'Oops, něco se pokazilo';
   }
-  
-  
+
 } else {
   $alert = [
     'status'  => false,

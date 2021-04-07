@@ -7,7 +7,7 @@
     <div class="expo-items-wrapper">
       <ExpoItem v-for="(expoItem, id) in expoItems" :key="id" :expoItem="expoItem" />
     </div>  
-  <a href="https://facebook.com/events/s/culturea-2021-cestuj-vsemi-smy/708636869810468/" class="text-green font-bold md:text-lg">Pro nejaktuálnější info navštivte náš Facebook</a>
+  <a href="https://facebook.com/events/s/culturea-2021-cestuj-vsemi-smy/708636869810468/" rel="noopener" class="text-green font-bold md:text-lg">Pro nejaktuálnější info navštivte náš Facebook</a>
   <div class="gg-border-style-dashed mt-12"></div>
 </template>
 <script>
@@ -15,6 +15,7 @@ import ProgramItem from './ProgramItem.vue'
 import ExpoItem from './ExpoItem.vue'
 
 import eyeIcon from '@/assets/img/icons/eyeIcon.svg'
+import smellIcon from '@/assets/img/icons/smellIcon.svg'
 import earIcon from '@/assets/img/icons/earIcon.svg'
 import handIcon from '@/assets/img/icons/handIcon.svg'
 
@@ -99,7 +100,7 @@ export default {
           date: '9. - 11. 4. (pátek, sobota, neděle)',
           place: 'ArtSteps',
           placeLink: 'https://fb.me/e/HccoJZm1',
-          isPrepared: false
+          isPrepared: true
         },        
       ],
       expoItems: [
@@ -107,31 +108,31 @@ export default {
           id: 1,
           headline: 'Culturea menu v Prašade',
           text: 'Navařit si íránské jídlo je bez potřebných surovin celkem výzva.  Šafrán nebo bryndza  pravděpodobně není běžnou součástí vaší spíže.  Naštěstí vám to s láskou připraví v Prašádu a vaše kuchyň tak zůstane čistá.  Rovněž si můžete objednat i polské speciality! Všechny verze jídel jsou vegetariánské. Jídla budou v nabídce pouze během festivalu.',
-          icons: [eyeIcon, earIcon, handIcon],
-          date: '9. - 11. 4. (pátek, sobota, neděle)',
+          icons: [eyeIcon, smellIcon, handIcon],
+          date: '9., 12., 13. 4. (pátek, pondělí, úterý)',
           place: 'Restaurace Prašád',
           placeLink: 'https://goo.gl/maps/ktUk7uDhVKjV5SiB8',
           isPrepared: true
         },
         {
           id: 2,
-          headline: 'Výstava za okny - polský grafický dizajnér',
-          text: '',
+          headline: 'Výstava polského grafického designéra (Sebastian Kubica)',
+          text: 'Polský umělec se zaměřením na grafický design a tvorbu plakátů. V jeho portfoliu najdete množství sociálně politických a kulturních plakátů, nebo i ty zaměřené na ekologii. Kubica je také laureátem mnoha prestižních ocenění.',
           icons: [eyeIcon],
           date: '9. - 11. 4. (pátek, sobota, neděle)',
           place: 'Kongresové centrum',
           placeLink: 'https://goo.gl/maps/pgJAeFvJnSwVa8Pe9',
-          isPrepared: false
+          isPrepared: true
         },
         {
           id: 3,
-          headline: 'Instalace uměleckých děl - íránský sochár',
-          text: '',
+          headline: 'Cestovatelské plakáty Culturea',
+          text: 'Výstava plakátů grafické designérky Lucii Mišekové, která položila základy vizuálního stylu Culturei 2021.',
           icons: [eyeIcon],
           date: '9. - 11. 4. (pátek, sobota, neděle)',
           place: 'Klub 204',
           placeLink: 'https://goo.gl/maps/hKgwewMySFENDzVX7',
-          isPrepared: false
+          isPrepared: true
         },
         {
           id: 4,
@@ -145,13 +146,23 @@ export default {
         },
         {
           id: 5,
-          headline: 'Hra se slovy',
-          text: '',
+          headline: 'Íránská vitráž',
+          text: 'Během pití kvalitní kávy si vychutnáte i pohled na smyslovou instalaci z dílny studentů FMK, Univerzity Tomáše Bati. Navíc máte možnost vyhrát lístky od Flixbusu do Polska a zpátky v hodnotě 2 000 CZK. Stačí se vyfotit u této instalace, fotku přidat do příběhu na Instagram a označit tam @culturea a @cafemalascena.',
+          icons: [eyeIcon],
+          date: '9. - 11. 4. (pátek, sobota, neděle)',
+          place: 'Café Malá scéna',
+          placeLink: 'https://goo.gl/maps/JrantjqvjugRqyNYA',
+          isPrepared: true
+        },
+        {
+          id: 6,
+          headline: 'Na slovíčko s Cultureou',
+          text: 'Během pití kvalitní kávy si vychutnáte i pohled na smyslovou instalaci z dílny studentů FMK, Univerzity Tomáše Bati. Navíc máte možnost vyhrát roční předplatné časopisu Travel Life. Stačí se vyfotit u této instalace, fotku přidat do příběhu na Instagram a označit tam @hedvabnastezka.cz a @culturea',
           icons: [eyeIcon],
           date: '9. - 11. 4. (pátek, sobota, neděle)',
           place: 'Jedním tahem',
           placeLink: 'https://goo.gl/maps/KmPyDUsKCDGbg9797',
-          isPrepared: false
+          isPrepared: true
         },
       ]
     }
